@@ -22,16 +22,24 @@ pre {font-family: 'Courier New', Courier, monospace;}
     --shadow2: 0 8px 16px 0px rgba(0, 0, 0, 0.5);
 }
 
+header, main, footer {
+    padding: 8px;
+}
 
-#wrapper {
+main {
     column-width: 24em;
+    column-count: 3;
+    padding: 1em 0;
+}
+
+.card-wrapper {
+    break-inside: avoid; /* in multi-column contexts */
+    box-sizing: border-box;
+    padding: 1.5em 0.75em;
 }
 
 .card {
-    break-inside: avoid; /* in multi-column contexts */
-    box-sizing: border-box;
     padding: 8px;
-    margin: 0 1em 2em;
     background-color: var(--yellow);
     box-shadow: var(--shadow1);
     transition: 0.25s;
@@ -46,3 +54,5 @@ pre {font-family: 'Courier New', Courier, monospace;}
     margin-top: 0.5em;
     font-size: 0.8em;
 }
+
+.hide-tag1, .hide-tag2, .hide-tag3, .hide-tag4 { display: none; }
