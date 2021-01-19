@@ -16,3 +16,14 @@ function filterCards() {
         }
     }
 }
+
+function showMore(e) {
+    let rm = e.currentTarget
+    rm.classList.add("hidden")
+    rm.nextElementSibling.classList.remove("hidden")
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+    let readmores = document.querySelectorAll(".readmore")
+    for (const rm of readmores) { rm.addEventListener('click', showMore, false) }
+})

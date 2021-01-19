@@ -22,6 +22,8 @@ pre {font-family: 'Courier New', Courier, monospace;}
     --shadow2: 0 8px 16px 0px rgba(0, 0, 0, 0.5);
 }
 
+.hidden { display: none; }
+
 header, main, footer {
     padding: 8px;
 }
@@ -55,4 +57,11 @@ main {
     font-size: 0.8em;
 }
 
-.hide-tag1, .hide-tag2, .hide-tag3, .hide-tag4 { display: none; }
+.readmore {
+    padding-left: 1em;
+    text-decoration: underline;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.readmore::after { content: "Read more »"; }
