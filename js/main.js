@@ -4,7 +4,7 @@ function filterCards() {
     for (cb of checkboxes) {
         showTag[cb.id] = cb.checked
     }
-    
+
     let cards = document.querySelectorAll(".card-wrapper")
     for (const card of cards) {
         card.style.display = ""
@@ -30,11 +30,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
 window.onload = function writeBlurb() {
 	let cards = document.querySelectorAll(".card-wrapper")
-	
-	str1 = "Welcome to our digital wall of anonymous letters. These are letters that have been submitted by participants of the 2021 European Astronomical Society Annual Meeting as part of the special session on welfare and mental health in astronomy (SS8). They detail the lived experiences of those in astronomical research. The submissions have been been screen by the session SOC to ensure they are not racist, homophobic, transphobic, sexist, ableist, etc. and that they do not disclose any identifying details. So far we have received "
-	str2 = str1.concat(cards.length.toString())
-	str3 = str2.concat(" letters. Below, there are a number of tags that you can select/deselect if you wish to see/exclude specific topics. For more information, please see the <a href='https://eas.unige.ch/EAS_meeting/session.jsp?id=SS8'>session website</a>.")
-	
+
+	str2 = "Welcome to our digital wall of anonymous letters. These are letters that have been submitted by participants of the 2021 European Astronomical Society Annual Meeting as part of the special session on welfare and mental health in astronomy (SS8). They detail the lived experiences of those in astronomical research. The submissions have been screened by the session SOC to ensure they are not discriminatory and are anonymous."
+	str3 = str2.concat(" Below, there are a number of tags that you can select/deselect if you wish to filter specific topics. You can submit a letter here: For more information, please see the <a href='https://docs.google.com/forms/d/1KPgc_1jcxHWZW3iyoJA2PXNufHVJtnwjzMtCQwu2FI0/edit</a>.")
+
 	document.getElementById("blurb").innerHTML = str3
 }
-
