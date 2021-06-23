@@ -1,23 +1,28 @@
 /* Re-define basic styles that were cleared by the reset.css.
 This ensures that formatting is consistent across browsers. */
-body {font: 12pt "Helvetica Neue", "Helvetica", "Arial", sans-serif;}
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
-h1, h2, h3, h4 { font-weight: bold; }
+body {font: 12pt "Avenir", "Helvetica", "Arial", sans-serif;color: #000000}
+h1 { font-size: 4em; color: #FFFFFF; text-align: center;}
+h2 { font-size: 1.5em; color: #FFFFFF; text-align: center;}
+h3 { font-size: 1.17em; text-align: center; color: #000000}
+h4 { font: 12pt "Avenir"; color:#FFFFFF}
+h5 { font: 12pt "Avenir"; color:#FFFFFF}
+h6 { font: 12pt "Avenir"; color:#b30900}
+h1, h2, h3, h4, h6 { font-weight: bold;}
 h1, h2, h3, h4, p, ol, ul, caption {
     margin-block-start: 0.25em;
     margin-block-end: 0.25em;
 }
-ol, ul { padding-left: 2em; }
-ol { list-style-type: decimal; }
-ul { list-style-type: disc; }
-pre {font-family: 'Courier New', Courier, monospace;}
+ol, ul { padding-left: 2em; color: #FFFFFF}
+ol { list-style-type: decimal; color: #FFFFFF}
+ul { list-style-type: disc; color: #FFFFFF}
+pre {font-family: 'Courier New', Courier, monospace; color: #FFFFFF}
 
 :root {
     /* Can define CSS variables here, e.g. for common colours. */
-    --lightgrey: #ddd;
+    --lightgrey: #DDD;
+    --blue: #1569C7;
     --yellow: #f5d428;
+    --bluegrey: #7393B3;
     --shadow1: 0 4px 8px 0px rgba(0, 0, 0, 0.5);
     --shadow2: 0 8px 16px 0px rgba(0, 0, 0, 0.5);
 }
@@ -42,7 +47,7 @@ main {
 
 .card {
     padding: 8px;
-    background-color: var(--yellow);
+    background-color: var(--lightgrey);
     box-shadow: var(--shadow1);
     transition: 0.25s;
 }
