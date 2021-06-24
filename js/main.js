@@ -10,8 +10,8 @@ function filterCards() {
         card.style.display = ""
         let currentTags = card.querySelector(".tags").textContent.split("; ")
         for (const tag of currentTags) {
-            const spaceless_tag = tag.replaceAll(' ', '')
-            if (showTag[spaceless_tag] == false) {
+            const normalized_tag = tag.replaceAll(/\s|,|\/|\.|-/g,'') // remove punctuation and whitespace
+            if (showTag[normalized_tag] == false) {
                 card.style.display = "none"
             }
         }
