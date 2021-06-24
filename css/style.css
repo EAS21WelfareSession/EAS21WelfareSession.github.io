@@ -70,3 +70,30 @@ main {
 }
 
 .readmore::after { content: "Read more »"; }
+
+.dropdown-host {
+    position: relative;
+    display: inline;
+}
+
+.dropdown-host button {
+    border-radius: 50%;
+    border: 0;
+    background: #fff;
+    font-weight: bold;
+    color: var(--bluegrey);
+}
+
+.dropdown-host .dropdown {
+    display: none;
+    position: absolute;
+    right: -6em;
+    width: 12em;
+    padding: 0 0.25em;
+    background-color: var(--lightgrey);
+    color: black;
+    box-shadow: var(--shadow1);
+    border: 1px solid black;
+    z-index: 1;
+}
+.dropdown-host:hover .dropdown {display: block;}
