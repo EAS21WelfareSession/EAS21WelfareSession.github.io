@@ -29,9 +29,54 @@ pre {font-family: 'Courier New', Courier, monospace; color: #FFFFFF}
 
 .hidden { display: none; }
 
+body {background-color: var(--bluegrey);}
+
 header, main, footer {
     padding: 8px;
 }
+
+/*
+Header
+Contains title, explanatory text and checkboxes for tags.
+*/
+
+#tagselector {
+    color: white;
+    margin-top: 2em;
+}
+
+.dropdown-host {
+    position: relative;
+    display: inline;
+}
+
+.dropdown-host .icon {
+    padding: 0 0.3em;
+    font: bold 0.8em sans-serif;
+    border-radius: 50%;
+    border: 0;
+    background: #fff;
+    color: var(--bluegrey);
+}
+
+.dropdown-host .dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 12em;
+    padding: 0 0.25em;
+    background-color: var(--lightgrey);
+    color: black;
+    box-shadow: var(--shadow1);
+    border: 1px solid black;
+    z-index: 1;
+}
+.dropdown-host:hover .dropdown {display: block;}
+
+/*
+Main
+Contains cards with submitted letters.
+*/
 
 main {
     column-width: 24em;
@@ -70,31 +115,3 @@ main {
 }
 
 .readmore::after { content: "Read more »"; }
-
-.dropdown-host {
-    position: relative;
-    display: inline;
-}
-
-.dropdown-host .icon {
-    padding: 0 0.3em;
-    font: bold 0.8em sans-serif;
-    border-radius: 50%;
-    border: 0;
-    background: #fff;
-    color: var(--bluegrey);
-}
-
-.dropdown-host .dropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    width: 12em;
-    padding: 0 0.25em;
-    background-color: var(--lightgrey);
-    color: black;
-    box-shadow: var(--shadow1);
-    border: 1px solid black;
-    z-index: 1;
-}
-.dropdown-host:hover .dropdown {display: block;}
