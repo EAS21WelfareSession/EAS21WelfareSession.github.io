@@ -76,18 +76,19 @@ main {
     display: inline;
 }
 
-.dropdown-host button {
+.dropdown-host .icon {
+    padding: 0 0.3em;
+    font: bold 0.8em sans-serif;
     border-radius: 50%;
     border: 0;
     background: #fff;
-    font-weight: bold;
     color: var(--bluegrey);
 }
 
 .dropdown-host .dropdown {
     display: none;
     position: absolute;
-    right: -6em;
+    right: 0;
     width: 12em;
     padding: 0 0.25em;
     background-color: var(--lightgrey);
