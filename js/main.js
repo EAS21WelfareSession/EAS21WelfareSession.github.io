@@ -8,9 +8,10 @@ function filterCards() {
     let cards = document.querySelectorAll(".card-wrapper")
     for (const card of cards) {
         card.style.display = ""
-        let currentTags = card.querySelector(".tags").textContent.split(" ")
+        let currentTags = card.querySelector(".tags").textContent.split("; ")
         for (const tag of currentTags) {
-            if (showTag[tag] == false) {
+            const spaceless_tag = tag.replaceAll(' ', '')
+            if (showTag[spaceless_tag] == false) {
                 card.style.display = "none"
             }
         }
