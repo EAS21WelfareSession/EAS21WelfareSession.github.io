@@ -124,11 +124,20 @@ main {
     font-size: 0.8em;
 }
 
-.readmore {
+.showmore {
     padding-left: 1em;
     text-decoration: underline;
     font-size: 0.8em;
     cursor: pointer;
 }
 
-.readmore::after { content: "Read more »"; }
+.showmore::after { content: "Show more »"; }
+
+.showless {
+    padding-left: 1em;
+    text-decoration: underline;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.showless::after { content: "« Show less"; }

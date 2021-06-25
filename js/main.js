@@ -35,7 +35,17 @@ function showMore(e) {
     rm.nextElementSibling.classList.remove("hidden")
 }
 
+function showLess(e) {
+    let parent = e.currentTarget.parentNode
+    let rm = parent.previousElementSibling // "Read more »"
+    parent.classList.add("hidden")
+    rm.classList.remove("hidden")
+}
+
 document.addEventListener("DOMContentLoaded", function(){
-    let readmores = document.querySelectorAll(".readmore")
-    for (const rm of readmores) { rm.addEventListener('click', showMore, false) }
+    let showmores = document.querySelectorAll(".showmore")
+    for (const sm of showmores) { sm.addEventListener('click', showMore, false) }
+
+    let showlesses = document.querySelectorAll(".showless")
+    for (const sl of showlesses) { sl.addEventListener('click', showLess, false) }
 })
