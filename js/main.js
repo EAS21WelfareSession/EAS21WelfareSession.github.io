@@ -1,3 +1,14 @@
+function showAllLetters(checked) {
+    /**
+     * (bool) checked: Choose whether to show (true) or hide (false) all tags.
+     */
+    let checkboxes = document.querySelectorAll("#tagselector input")
+    for (cb of checkboxes) {
+        cb.checked = checked
+    }
+    filterCards()
+}
+
 function filterCards() {
     let showTag = {}
     let checkboxes = document.querySelectorAll("#tagselector input")
