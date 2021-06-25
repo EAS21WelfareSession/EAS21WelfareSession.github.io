@@ -18,12 +18,13 @@
         <p>Welcome to our digital wall of anonymous letters. These are letters that have been submitted by participants of the 2021
         European Astronomical Society Annual Meeting as part of the special session on welfare and mental health in astronomy
         (SS8). They detail the lived experiences of those in astronomical research. The submissions have been screened by the
-        session SOC to ensure they are not discriminatory and are anonymous. Below there are a number of tags that you can select/deselect
-        if you wish to filter specific topics. Letter submission will remain open throughout the EAS. You can <a href='https://docs.google.com/forms/d/1KPgc_1jcxHWZW3iyoJA2PXNufHVJtnwjzMtCQwu2FI0/edit'>submit a letter here</a>.
+        session SOC to ensure they are not discriminatory and are anonymous. Below there are a number of tags that you can deselect
+        if you wish to filter-out specific topics. Letter submission will remain open throughout the EAS. You can <a href='https://docs.google.com/forms/d/1KPgc_1jcxHWZW3iyoJA2PXNufHVJtnwjzMtCQwu2FI0/edit'>submit a letter here</a>.
         </p>
 
         <div id="tagselector">
             Select letter tag to show:
+
             <input type="checkbox" name="Lack of support" id="Lackofsupport" checked onclick="filterCards()">
             <label for="Lackofsupport">Lack of support</label>
 
@@ -59,9 +60,29 @@ reduced professional efficacy.</div>
 
             <input type="checkbox" name="Racism and racial slurs" id="Racismandracialslurs" checked onclick="filterCards()">
             <label for="Racismandracialslurs">Racism and racial slurs</label>
+            <div class="dropdown-host">
+                <span class="icon">?</span>
+                <div class="dropdown">  Racism is prejudice, discrimination, or antagonism by an individual, community, or institution against a person or people on the basis of their membership of a particular racial or ethnic group, typically one that is a minority or marginalized.</div>
+            </div>
+
+
 
             <input type="checkbox" name="Homophobia, biphobia, transphobia" id="Homophobia,biphobia,transphobia" checked onclick="filterCards()">
             <label for="Homophobia,biphobia,transphobia">Homophobia, biphobia, transphobia</label>
+
+            <input type="checkbox" name="Abelism" id="Abelism" checked onclick="filterCards()">
+            <label for="Abelism">Abelism</label>
+            <div class="dropdown-host">
+                <span class="icon">?</span>
+                <div class="dropdown">Discrimination in favour of able-bodied people.</div>
+            </div>
+
+            <input type="checkbox" name="Scientificmisconduct" id="Scientificmisconduct" checked onclick="filterCards()">
+            <label for="Scientificmisconduct">Scientific misconduct</label>
+            <div class="dropdown-host">
+                <span class="icon">?</span>
+                <div class="dropdown">Examples include plagiarism and the intentional or gross negligence leading to fabrication of the scientific message or a false credit or emphasis given to a scientist</div>
+            </div>
 
             <input type="checkbox" name="Hateful language directed at religious groups" id="Hatefullanguagedirectedatreligiousgroups" checked onclick="filterCards()">
             <label for="Hatefullanguagedirectedatreligiousgroups">Hateful language directed at religious groups</label>
@@ -86,8 +107,8 @@ reduced professional efficacy.</div>
             <input type="checkbox" name="Self harm, suicidal thoughts and suicide" id="Selfharm,suicidalthoughtsandsuicide" checked onclick="filterCards()">
             <label for="Selfharm,suicidalthoughtsandsuicide">Self harm, suicidal thoughts and suicide</label>
 
-            <input type="checkbox" name="Alcohol, other drugs" id="Alcohol,otherdrugs" checked onclick="filterCards()">
-            <label for="Alcohol,otherdrugs">Alcohol, other drugs</label>
+            <input type="checkbox" name="Alcohol, other intoxicants" id="Alcohol,otherintoxicants" checked onclick="filterCards()">
+            <label for="Alcohol,otherintoxicants">Alcohol, other intoxicants</label>
 
             <input type="checkbox" name="Death or dying" id="Deathordying" checked onclick="filterCards()">
             <label for="Deathordying">Death or dying</label>
@@ -103,6 +124,10 @@ reduced professional efficacy.</div>
             <input type="checkbox" name="Career insecurity" id="Careerinsecurity" checked onclick="filterCards()">
             <label for="Careerinsecurity">Career insecurity</label>
 
+            <input type="checkbox" name="Food, eating disorders, body dysmorphia, body hatred, and fat phobia" id="Food,eatingdisorders,bodydysmorphia,bodyhatred,andfatphobia" checked onclick="filterCards()">
+            <label for="Food,eatingdisorders,bodydysmorphia,body hatred,andfatphobia">Food, eating disorders, body dysmorphia, body hatred, and fat phobia</label>
+
+
 
         </div>
     </header>
@@ -111,9 +136,9 @@ reduced professional efficacy.</div>
             <div class="card">
                 <h3>Learning How Low My Self-confidence Could Go</h3>
                 <div class="content">
-                My PhD supervisor was sexist, mean and racist. He is a bully and loved to put me down to make himself feel intelligent and powerful. He told me I am not in the top 10% of students so I should go into industry and save myself the struggle. He suggested high-class prostitution as a valid option. Just before my PhD thesis defense he told me to tell them I am dyslexic and that is the reason my writing is very poor (even though three of my papers had been published in a peer-reviewed journal), I told him I did not have this, but he said to lie because my writing was that shit. This made me so nervous I tripped over my feet when going into my defense room. During meetings he would often fall asleep, I would have to leave the office
+                My PhD supervisor was sexist, mean and racist. He is a bully and loved to put me down to make himself feel intelligent and powerful. He told me I am not in the top 10% of students so I should go into industry and save myself the struggle. He suggested high-class prostitution as a valid option. Just before my PhD thesis defense he told me to tell them I am dyslexic and that is the reason my writing is very poor (even though three of my papers had been published in a peer-reviewed journal), I told him I did not have this,
                 <span class="readmore"></span>
-                <span class="more hidden"> embarrassed and try to set up another meeting. When I asked him questions he told me to go away and not ask him questions. During meetings he would tell me everything I had done wrong but without guidance on how to fix it, again when asked he said that was my job. He would mark my papers and when I changed things, next time he would often change it back-infuriating, and when I asked him once he ignored me. When I first started my PhD he showed me to a room, gave me a book on Astrophysics, left me the whole day, and said to read the book and come find him when I finished. A close family member died during my second year, and when I heard the news I went to him to tell him I had to go home (obviously upset and crying) and be with my family, and he offered no condolences but just asked when I would be coming back. When travelling with him he would be racist to other people, in often a loud voice-while I tried to hide. He did not turn up at my PhD graduation, he did not even give an excuse. I felt no support or help from him, except to lower my self-confidence. He never helped me and I learnt very quickly that if  I wanted this PhD I would have to do it myself and ask help from my fellow PhDs and postdocs. When I asked him about his previous PhD student he said she sold herself to finance, which meant it was hard to ever talk to him about careers. I have never told anyone about how bad he was, because if I wanted to continue my career in academia he has the power to destroy it. My mental health suffered under him, I barely made it through, there were many times when I wanted to end everything (and not just my PhD). I suffered from severe panic attacks, once I had to go to the doctors because I thought it was a heart attack. I cracked my back teeth because of grinding my teeth due to all of the stress and still have to sleep with a mouth guard, many many years later. I am still not over this probably because I have blocked most things-so the list above is the tip of the iceberg. When I got my postdoc he did not congratulate me and tell me well done. During my postdoc my new supervisor could see how much I suffered and sent me to therapy. My self-confidence and my mental health will take more time to heal. I never felt good enough for my PhD and doubted myself every day, this feeling still exists in me and most of these feelings about my ability (or lack of) is due to his treatment. Basically I felt stupid everyday and I wondered every day why he chose me, I did ask him and he said he got given one this year due to funding but never chose me. I felt stupid and not chosen with no support or help from my supervisor for the majority of my PhD. My PhD was one of the worst times of my life and the majority of this was because of my supervisor. If I could go back in time I would never have done this PhD. Now I just have to accept what happened and try to continue my life and build my confidence and mental health.
+                <span class="more hidden"> but he said to lie because my writing was that shit. This made me so nervous I tripped over my feet when going into my defense room. During meetings he would often fall asleep, I would have to leave the office embarrassed and try to set up another meeting. When I asked him questions he told me to go away and not ask him questions. During meetings he would tell me everything I had done wrong but without guidance on how to fix it, again when asked he said that was my job. He would mark my papers and when I changed things, next time he would often change it back-infuriating, and when I asked him once he ignored me. When I first started my PhD he showed me to a room, gave me a book on Astrophysics, left me the whole day, and said to read the book and come find him when I finished. <br> <br> During the second year of my PhD, a close family member died and when I heard the news I went to my supervisor to tell him I had to go home (obviously upset and crying) and be with my family. He offered no condolences but just asked when I would be coming back. When travelling with him he would be racist to other people, in often a loud voice-while I tried to hide. He did not turn up at my PhD graduation, he did not even give an excuse. I felt no support or help from him, except to lower my self-confidence. He never helped me and I learnt very quickly that if  I wanted this PhD I would have to do it myself and ask help from my fellow PhDs and postdocs. When I asked him about his previous PhD student he said she sold herself to finance, which meant it was hard to ever talk to him about careers. I have never told anyone about how bad he was, because if I wanted to continue my career in academia he has the power to destroy it. <br> <br> My mental health suffered because of my PhD supervisor, I barely made it through. There were many times when I wanted to end everything (and not just my PhD). I suffered from severe panic attacks, once I had to go to the doctors because I thought it was a heart attack. I cracked my back teeth because of grinding my teeth due to all of the stress and still have to sleep with a mouth guard, many many years later. I am still not over this probably because I have blocked most things-so the list above is the tip of the iceberg. <br> <br> When I got my postdoc he did not congratulate me and tell me well done. During my postdoc my new supervisor could see how much I suffered and sent me to therapy. My self-confidence and my mental health will take more time to heal. I never felt good enough for my PhD and doubted myself every day, this feeling still exists in me and most of these feelings about my ability (or lack of) is due to his treatment. Basically I felt stupid everyday and I wondered every day why he chose me, I did ask him and he said he got given one this year due to funding but never chose me. I felt stupid and not chosen with no support or help from my supervisor for the majority of my PhD. My PhD was one of the worst times of my life and the majority of this was because of my supervisor. If I could go back in time I would never have done this PhD. Now I just have to accept what happened and try to continue my life and build my confidence and mental health.
 </span>
               </div>
                 <div class="tags">Lack of support; Burnout and stress; Leaving or left academia; Bullying, gaslighting, stalking, abuse; Sexual Harassment, sexual violence; Racism and racial slurs; Hateful language directed at religious groups; Sexism and misogyny; Toxic masculinity and misandry; Mental illness; Self harm, suicidal thoughts and suicide; Death or dying</div>
@@ -128,7 +153,8 @@ reduced professional efficacy.</div>
                 <div class="content">
                   I did observational astronomy research as an undergraduate, fully intending to pursue graduate school and a career in the field. However, after the first semester of working with my PI, several traumatic things happened in my personal life, including the simultaneous loss of my health insurance, which meant that my access to therapy was cut in half so that I could still afford it. My PI was at first extremely understanding, and did not push me when it came to my research. However, the following summer she decided that because I still wasn't productive enough, she would take a micromanaging approach to ensure my productivity, requiring that I send an email with what I was doing every single day.
                     <span class="readmore"></span>
-                    <span class="more hidden"> This proved to be even worse for both my mental health and our relationship. I had crippling depression that kept me from getting out of bed most days, and barely scraped by that summer with the threat that I'd lose my financial support if I didn't produce enough results. <br><br> <p> The following fall semester (first semester of my senior year), we came to an understanding that the micromanaging strategy was not good for me, and so my PI ended up taking the opposite approach of providing almost no support. I continued to struggle in both research and classes. During the last month of the semester, my PI came to me and told me that I had simply not done enough work to deserve the research credit I was enrolled in. She agreed to give me an incomplete on the condition that I work twice as hard the next semester. Trying to save my degree and my chances at getting into graduate school, I agreed. </p>
+                    <span class="more hidden">
+                      This proved to be even worse for both my mental health and our relationship. I had crippling depression that kept me from getting out of bed most days, and barely scraped by that summer with the threat that I'd lose my financial support if I didn't produce enough results. <br><br> <p> The following fall semester (first semester of my senior year), we came to an understanding that the micromanaging strategy was not good for me, and so my PI ended up taking the opposite approach of providing almost no support. I continued to struggle in both research and classes. During the last month of the semester, my PI came to me and told me that I had simply not done enough work to deserve the research credit I was enrolled in. She agreed to give me an incomplete on the condition that I work twice as hard the next semester. Trying to save my degree and my chances at getting into graduate school, I agreed. </p>
                       <br>
 
                       <p> Long story short, after some advocacy from my program advisor and multiple sessions of crying in my PI's office, I got her to agree to let me extend my work into the summer after graduation so that I could get full credit. The experience ended with me being forced to do the last few days of work while driving cross-country to graduate school because she refused to continue communication with me after a certain date. Because of how terrible the experience was, I ultimately decided not to pursue graduate school in observational astronomy. Sometimes I wonder if that would have been the case if things had been different with my undergraduate PI. Thankfully, my advisor in graduate school has been so supportive and understanding when I need an extra push to keep going. Just knowing that I have his support and understanding makes it so much easier to get myself back into the headspace of wanting to work. </p>
@@ -136,8 +162,563 @@ reduced professional efficacy.</div>
 
                     </span>
                 </div>
-                <div class="tags"><h6>Lack of support; Burnout and stress; Mental illness</h6></div>
+                <div class="tags">Lack of support; Burnout and stress; Mental illness</div>
             </div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>A Rough Start</h3>
+                <div class="content">
+
+                  Though by many measures I am currently enjoying a successful career in astrophysics, my undergraduate experience was particularly unpleasant due to a combination of faculty indifference, a programmatic lack of perspective on workloads, and likely low-grade racism.  In retrospect, it is a small miracle (read: luck and perseverance) that I have continued in this field.
+                  <br><br>
+                  <span class="readmore"></span>
+                  <span class="more hidden">
+                    Despite being considered the premier institution for studying astronomy in my country, the university I attended as an undergraduate had Departments of Physics, Astronomy, and Mathematics that were filled with professors who cared little about their students, and in no way cultivated a passion for learning or served as encouraging role models.  Course after course was taught badly by faculty who sleepwalked through outdated material, putting in their hours so they could go back to their research.  In addition, the overwhelming workload assigned by the professors in all physics or astronomy courses led to years of crushing isolation and stress for me.  Final exams were experiments in bell-curving, containing many questions on material not covered in the course.  Indeed, the program I followed seemed more intended to filter out the ""unworthy"" than to educate, let alone inspire, and it fostered unhealthy inter-student competitions as well.  Moreover, though I am considered to be a straight white male, even my ethnicity was still not as white as the faculty's, which I suspect contributed to a long parade of microaggressions, humiliations, and career dissuasions I experienced over all four years.  I am sure my experience was not isolated - many other students from my era experienced similar obstacles.  Many bitterly left to pursue other programs  (One graduate student in this university's program even committed suicide, sadly).  I was one of only three astrophysics majors to graduate my year, out of a student body of 40,000+.  Fortunately (for me), I was privileged enough to flee my country and attend graduate school elsewhere, which was a profoundly different (and positive) experience.  Nevertheless, I still feel mental scars from that first experience three decades later, expressed as nagging self-doubts, impostor syndrome (still!), workaholism, depression, and even survivor's guilt.
+                    <br><br>
+                    The good news is that I have taken active care to provide my students with more positive, encouraging experiences going forward. I have never understood the gatekeeping attitudes of my undergraduate professors but I dread to think of the impact they had on generations of promising students over the years.  I shudder to think how bad the experiences were of those with even greater gender or ethnic differences from the department faculty than me.
+                  </span>
+        </div>
+
+                  <div class="tags"> Lack of Support; Gatekeeping and exclusion; Burnout and stress; Leaving or left academia; Racism and racial slurs; Mental illness; Alcohol, other intoxicants; Death or dying; Classism    </div>
+                </div>
+        </div>
+
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>Mental Health When All Privileges Are Ticked</h3>
+                <div class="content">
+
+        I am a straight white man from a middle class background who came from a caring family. I have suffered with depressive episodes for the past 5 years and been on strong doses of antidepressants for 3 of those. Whilst I fully support the current focus on eradicating all forms of discrimination and injustice faced by individuals belonging to historically oppressed groups, the fact that I fall into the group I do has made my experience in academia worse, - as on the grounds of expected lived experience and privilege, I have no reason to feel how I feel.
+        <br><br>
+        <span class="readmore"></span>
+        <span class="more hidden">
+        A few individuals in my department, who pride themselves on their progressive and inclusive attitudes, made me feel very unwelcome and alienated. I stopped attending social gatherings and I considered leaving due to my impression that someone like myself has no grounds to feel bad about anything because of my privileges.
+        <br><br>
+        I have been receiving therapy for over a year to help with my challenges. I have since realised that my interpretation of those individuals was mainly caused by my past experience (I moved countries as a child) and I am learning how the idea of ""not fitting in"" and ""not belonging"" manifests differently in different people in different ways. I have since reasoned that the individuals who made me feel excluded probably had no intention of doing that, and if they did, consciously or subconsciously, they were probably feeling like they didn't belong themselves - imposter syndrome is too common!
+        <br><br>
+        I only talk about this with my therapist, as otherwise I worry I'll be seen as someone who is trying to earn victim points. I have been very lucky in that I could afford therapy and to get help with my issues, but so many do not.
+        <br><br>
+        We need more emotional intelligence in academia.
+        </span>
+                      </div>
+
+        <div class="tags"> Mental illness; Toxic Masculinity; Gatekeeping and exclusion; Leaving or left academia;</div>
+        </div>
+        </div>
+
+
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>When I Was 6 Years Old ...</h3>
+                <div class="content">
+
+        When I was 6 years old, the world told me that I was like a boy because I liked science. When I was 10, a boy in my class told me that I wouldn't amount to anything because I was a girl. When I was 18, I felt lucky that the male PhD student, who sexually harassed the women in my undergraduate year weekly, only harassed me once because normally he didn't work with my class. When I was 25, a male professor sexually harassed me and more than 15 other students, nothing was done about it. When I was 27, my male friends in academia said I would have an easier time getting a job because I am a woman. When I was 29, I overheard a trusted colleague and collaborator say he only lost the poster competition <span class="readmore"></span>
+        <span class="more hidden"> because he was a man. When I was 30, a man stood up at the conference I was attending and said that there are less women in physics because women don't have the right brains to do physics. When I was 35, a male colleague said don’t worry, soon the older generation will be gone, and the discrimination will end.  When my niece wants to buy a science themed toy, it is in the boy’s section of the store. Many of my peers who are my age or younger are silent or openly discriminate. I am so tired. Can you help me?
+        </span>
+                      </div>
+        <div class="tags"> Lack of Support; Gatekeeping and exclusion; Sexual Harassment, sexual violence; Sexism and misogyny; 	 </div>
+        </div>
+        </div>
+
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>A Plea To Line Managers</h3>
+                <div class="content">
+
+
+        We are advised that we must maintain a healthy work-life balance. We are told that we need to be available during normal working hours. We are reminded that academia gives us flexibility that is not possible in other careers. And these same people, our line managers, send emails to the research group late in the evenings and over the weekend... You may have a sign-off that includes "I work strange hours, and don't expect an immediate reply" but could the email really not have waited until 9am of the next working day? (E.g., Gmail allows you to set a time for the email to be sent.) If you are a line manager that forgets to notify others of things until the day before, then maybe *you* are the one who needs to work on their organisational skills, and not put pressure on postdocs and students who already have their hands full.
+        </span>
+                      </div>
+        <div class="tags"> Burnout and stress; </div>
+        </div>
+        </div>
+
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>Mental Health Issues And Academia Seem Incompatible</h3>
+                <div class="content">
+
+
+         "My experience with academia has been shaped by mental health issues caused by the behaviour of those profiting from the current culture and intrinsic mental health issues exacerbated by a culture that seems unable to tolerate them.
+        <br><br>
+        <span class="readmore"></span>
+        <span class="more hidden">
+        One of the first things I discovered at university was whisper networks. I was warned to stay away from a tutor because he was known for making female students break down during tutorials, I was warned against a PI because not a single women had ever managed to obtain a PhD under him in more than 10 years, I was warned not to participate in the departments' football games because one of the professors was known for harassing female players, I warned others of a PI who loved making jokes about ""women and gays"" not having the ""brains for physics"" and once called me a ""broken toy"" after learning I was asexual and queer, I warned others of a PI who terrorised students over the weekend. It's hard to describe what this does to you, navigating academia and having to keep a mental tally of all the people to avoid, all the names that should trigger red flags, all the friends you worry about because the whisper network didn't reach them in time. It's daily microaggressions, individual cases of ""bad apples"" that don't seem so bad when you look at them individually but they add up. It's exhausting and it never seems to let up.
+        <br><br>
+
+        Honestly, though, I was quite lucky myself. Aside from the general sexism and the homophobia that seems to permeate academic spaces, my immediate colleagues were at least decent people, some were absolutely amazing. Yet I have seen bullying and harassment all around me, have seen people break down and quit through no fault of their own, just because the people meant to guide them decided instead to exploit and degrade them. I have seen universities advertise their zero-tolerance policies and yet not lift a finger to stop the toxic and well-documented behaviour of notorious staff members. Once I started to stop relying on whisper networks and decided to act instead I was encouraged to my face but called a ""difficult person"" behind my back. What's most frustrating though, are not the people actively acting against you, it's the people that don't even see a problem, that deny its existence. People who believe racism in science doesn't exist, sexism doesn't exist, homo- and transphobia don't exist. It's frustrating and exhausting constantly having to fight against these boundaries while others deny their very existence and your experience.
+        <br><br>
+
+        In terms of intrinsic mental health issues, there are a lot of stories there: Complete erosion of any self-worth I might have once had, a burnout as an undergraduate that left me in the hospital for weeks and with chronic issues after, an injury I couldn't take care of because it would have required several months of rest and my funding couldn't be extended so I just pushed through leaving me with another chronic issue, a trip to the emergency room because I thought I was having a heart attack but turns out it was just a week-long panic attack, family members I couldn't grieve for properly because deadlines couldn't be moved (one professor failed me for an exam the day after a grandparent died because I couldn't produce ""believable proof"" before the start of the exam), sick family members I couldn't take care of because back then working from home was not allowed. It took years of calling myself lazy and stupid and useless but eventually I managed to drag myself to a therapist, then another, then a doctor who finally put a name to it: Anxiety disorder and severe chronic depression though with medication I've managed to get it down to moderate chronic depression (yay...). What has shocked me most was my reaction to all of this. I spent years advocating for the de-stigmatisation of mental health issues in academia, shared my own struggles and yet now that there is a diagnosis, I haven't told a single person because I'm scared out of my mind, constantly ping-ponging between feeling ashamed and weak and confused. Nevertheless, this is what it's going to be like now and it terrifies me with regards to my academic career. For the rest of my life, I will have to take medication to be functional and even then from day to day, my brain's ability to process chemicals correctly at any given time will determine just how functional I can be. Currently, I can look at the future and realise that things won’t always be bad, I will have good days, weeks, maybe even months. However, the chronic nature of it all also means I will have bad days, weeks, maybe even months during which my biggest daily achievements will be the simple act of waking up. It is a complete mystery to me how I, or someone else with a disability or chronic illness, could possibly compete with healthy colleagues. Academia is not built for this. So far too often I spiral and I wonder am I too broken to function in academia or is academia too broken to function for me. Whatever the answer is, the outcome is likely gonna be the same."
+        </span>
+                      </div>
+        <div class="tags"> Gatekeeping and exclusion; Burnout and stress; Bullying, gaslighting, stalking, abuse; Sexual Harassment, sexual violence; Homophobia, biphobia, transphobia; Sexism and misogyny; Mental illness; Self harm, suicidal thoughts and suicide; Death or dying; Career Insecurity; </div>
+        </div>
+        </div>
+
+
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>Untitled</h3>
+                <div class="content">
+
+         You really have difficulties at working well here, developing a career or even getting to know the necessary information and getting support,  including technical, if you don't belong to some major group, be it a research group or a union group (for employees). There isn't much room for women either.
+        </span>
+                      </div>
+            <div class="tags"> Lack of Support; Gatekeeping and exclusion; Sexism and misogyny; </div>
+          </div>
+          </div>
+
+          <div class="card-wrapper">
+              <div class="card">
+                  <h3>Keeping up Appearances and the Stigma of Silence</h3>
+                  <div class="content">
+
+
+        "Dear Reader,
+        <br><br><br>
+
+        2020 was both a bad and a good year for me personally. It was a year in which I enjoyed some of my best mental health in a long time. A year in which I was finally approaching a full recovery from an eating disorder, anorexia nervosa, after more than 12 years of cycling between suffering, partial recovery and relapse. Although the isolation involved with lockdown certainly isn’t helpful to everyone, I feel much more secure eating alone. In fact, I have always found social situations around food anxiety provoking - one aspect of conferences and meetings that I do not miss.
+        <span class="readmore"></span>
+        <span class="more hidden">
+        If you think you don’t know anyone with an eating disorder, you’re likely wrong. They just haven’t told you yet.
+        Whilst everyone’s experience is different, here are a few basic things to know:
+        1. Social events focussed on food can be incredibly anxiety provoking, as can spontaneous cake or snack sharing at work.
+        Where possible, inform people in advance - it really helps with planning and reducing anxiety.
+        2. It doesn’t mean sufferers are vain or judging others. Often, it is a way of coping with emotional pain.
+        3. Don’t make judging comments on how much others are eating, their food choices or body size.
+        This can lead to feelings of guilt, shame, or an increase in disordered behaviours.
+        Previous unhelpful comments I’ve had from colleagues include: “Is that all you’re having?”, “Everyone is fat compared to X”, “Now YOU are thin - but you do eat, don’t you?” Well, yes. People with anorexia do actually eat - otherwise, the mortality rate would be 100% instead of *only* 10%. Seeing us eat doesn’t mean we’re fully recovered. It means we’re fighting our thoughts. Full recovery usually takes years of effort.
+        4. Support employees who may need time off.
+        On at least three occasions I refused a referral to a psychiatric hospital, because I was concerned about how taking weeks off work due to illness or without explanation would appear. (During my undergraduate I was severely ill and spent six months in a psychiatric hospital, vowing never to repeat the experience.) Thankfully, I have now improved a lot - after many appointments over the last two years with a therapist, psychiatrist and dietitian.
+        <br><br>
+
+        Additionally, I have depression. Despite many depressive episodes, this wasn’t recognised until 2019, when I was finally prescribed antidepressants which really changed my life. Honestly felt like a massive weight had been lifted, and I asked myself - is this how people usually feel?!
+        Medication does not make me immune though, and bad depression days still happen. Nevertheless, I am high-functioning, so I will still fulfil my obligations; but on bad days, I will not be able to get much work done outside the bare minimum. Instead, I will arrive late, leave early, and spend time at home just lying down and staring into space.
+        As yet I don’t know how well I’ll cope further down the career ladder, as the demands become more stressful in academia.
+        Fortunately, with the help I’ve recently had, overall things have been slowly but steadily improving.
+        <br><br>
+
+        One aspect that hindered receiving health care was the short-term contracts. Waiting lists can be long, and moving location every few years due to short contracts doesn’t help with continuity of care.
+        <br><br>
+
+        Although mental health issues are common, they are not often spoken about openly. Even sharing anonymously and editing carefully, it scares me that someone might guess my identity. Look out for your colleagues, and I hope that in future we will be able to cultivate a more open and supportive environment for all in astronomy.
+
+        To end, I’d like to share a poem I wrote - using the black hole in M87, recently imaged by the EHT, as a metaphor for depression.
+        Lastly, I wish you, the reader, much success and good health, and hope that you never have to experience an eating disorder or clinical depression.
+        <br><br>
+
+        M87
+        <br><br>
+
+        It was there, long before you knew it was there, before anyone knew it was there.
+        The effects could be felt before anyone noticed.
+        Pulling, tearing, dragging you down.
+        So powerful, so strong, so heavy.
+        Other stars, sources of light, beacons of hope, come close – but go away again so fast and stay away so long.
+        The repercussions could be felt.
+        Eventually, it was established: black holes exist.
+        And this black hole, in M87, is a monster.
+        Experts agreed the black hole was there, the evidence was clear, but still you couldn’t see it.
+        You cannot see it alone. We cannot see it by ourselves. We need help to see it; we need to work together to see it.
+        A team was formed; a network of connections near and far, some with people you know, some you have never met.
+        But all with a common aim: to see a black hole.
+        To learn and understand.
+        And so, you work together.
+        Patience, hard work, perseverance, but also good timing and sheer luck play a role,
+        Together you work towards shining a light on the darkness.
+        There it was: the first image of the black hole.
+        Except, it wasn’t an image of the black hole; it was an image of the shadow of the black hole,
+        And you can only see shadows where there is light.
+        </span>
+                      </div>
+        <div class="tags"> Mental illness; Food, eating disorders, body dysmorphia, body hatred, and fat phobia    </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>My Unhappy Journey in Academia</h3>
+                <div class="content">
+
+        For several years, I have been trying to carve myself a space in astronomy. And in most cases it sucks. I am a woman with a hearing disability from a working-class background. And in many cases I was made to feel that my disability is a nuisance. If I can't hear stuff? Yeah, that is my fault. God forbid we use microphones. Or try to minimize noise.
+        <br><br>
+
+        In many cases I came across people who basically gloated that they come from an academic background. One egregious example: "I am the son of a professor.
+        <span class="readmore"></span>
+        <span class="more hidden">
+        Of course I knew that I was cut out to also become a professor" to which I replied "Aha and me? I am cut out to live with seven children in a run-down apartment, or what?" I have many similar stories where people got special treatment because they have academic backgrounds and know how the game is played. Me? Difficult, too late for any proper support. So I am left to fight for myself. But even if I accomplish something, I am not left alone. My colleagues always find a way to mistreat me.
+        <br><br>
+
+        For example, I get the constant "arrogantly talked down to” treatment. Just last week someone who is not from my field, answered my question: "why are you saying that, that is not right", by basically trying to explain the basics of my own field back to me. Like, thank you, famous astronomer, I wrote all of that in the introduction of my last 1st author paper, and this still does not address that you obviously have only understood 50% of the problem. But god forbid that you pause and think about your own misconception. Instead go ahead and imply that I don't know the fundamentals of my field in a group setting. Luckily, a male ally sprang to my help and confirmed that I was right and the famous astronomer was wrong. But I bet you that this astronomer will not remember that I, the female colleague, was right. The male colleague who tried to help me will get all the credit. Because this is how pervasive sexism is, especially in Europe. Referees have implied in two of my papers that I am incapable in what I do. To the point that they advised me that I should read textbooks. I still proved that I was right, but dear goodness, the fighting over utterly minor things.
+        <br><br>
+
+        I was also denied funding in several venues by one powerful man who then later gloated about his gatekeeping and told friends of mine how much I suck. He managed to get himself in several early career funding commitees to specifically axe his "incompetent" competition. Not only me, but also others. I am only academically alive today because mentors of mine go out of their way to divert their resources my way. I am grateful for this support, but I should not rely on the charity of others to barely stay alive in academia.
+        <br><br>
+
+        Stress: This constant derision and hostility and fighting for resources is so painful that I am happy that we have a Corona crisis. That way I don't have to face these bullies at conferences or in my own home institute.
+        <br><br>
+
+        Stalking and intimidation: In particular, one nasty fellow actually saw that I struggled and faced hostility. He pretended to help me to get me into projects. Instead, he took my software and my proposals to get himself into the projects by pretending that my work was his own. When I complained, I was warned that I should not lie and that my complaints were actual scientific misconduct. I even had emails and documentation to prove that I gave him the stuff that he then presented as his own work. Neither my boss nor the ombudsman wanted to even see the evidence, or to act upon it. The whole matter was ruled as a "misunderstanding". So this person reaps the fruits of my hard work and I am permanently barred from the projects that he is now gatekeeping from me. And he is bad mouthing me, saying that I am "just jealous". When this person found out that my complaints were not taken seriously, he escalated. In 2019, he came to my office and he physically intimidated me, and told me, only 2 cm from my face, "you should leave science, that is better for everybody".
+
+        During a conference later that year in September he even played out his intimidation in front of two eyewitnesses. He came into the aula (university meeting/work-space) while I was in a discussion with two colleagues. He came to stand before me, grinned at me suggestively, and without a single word of greeting placed himself into a seat directly in front of me. This behaviour was so off, that my colleagues suggested that we move two rows further away from this person. When my colleagues and I sat down again, this person stood up again, came to me, leered at me with a huge grin and sat again directly in front of me. My colleagues were shocked but then said to me that we should now just sit there and ignore this person. Later that day, this person permanently stalked me. I actually complained to the conference organizers. But they told me that as long as he was not touching me that there was nothing that they could do.
+        <br><br>
+
+        I actually skipped the next two days of the conference after that because, to be honest, I was at the end of my mental strength. I only resurfaced after the bully had left the conference.
+        <br><br>
+
+        Did I mention that I am happy about the Corona crisis? I don't have to be afraid in the home office that this person may come in and, indeed, start to touch me. And the institute knows about the incident. But of course, they refuse to do anything. So now I try to leave this institute, one way or the other. They actually told me that I should try to record the next encounter with my smartphone. Well, thank you very much for nothing.
+        <br><br>
+
+        During a "sexism in academia seminar" I tried to raise the point that bystander intervention training would be good. I was told to my face "we don't need this, these instances are rare". And I had told this person one year earlier about the stalking of my bully at my own institute. Obviously, she has forgotten or just does not care for my well-being. But yes, she leads a seminar on sexism in academia, and on how she does not allow this behaviour.
+        <br><br>
+
+        I am so tired of these constant workshops that don't lead to any tangible improvement and are now even used to shut down and discourage women who need accountability and a safe haven. How can you pretend to actually care about sexism if you don't hold bullies, gatekeepers, and plagiarizers accountable? You can't. You are just hypocrites because talk is cheap, but action is too much bother for you.
+        <br><br>
+
+        To be honest, I don't know why I bother anymore. Why should I suffer in this environment?
+        </span>
+                      </div>
+        <div class="tags"> Lack of Support; Gatekeeping and exclusion; Burnout and stress; Bullying, gaslighting, stalking, abuse; Sexism and misogyny; Mental illness; Classism; Ableism; Leaving or left academia; </div>
+
+        </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>Psychologically Abusive Advisor</h3>
+                <div class="content">
+
+
+        I had an incredibly toxic advisor during my first two years of graduate school, and the effects of this experience impacted me more than four years later. I was belittled, bullied, gaslit, and constantly accused of things I did not do. My good-standing at the university and my career were at great risk. I had little-to-no scientific guidance, and would frequently receive emails questioning my place in the program. The department chair and other higher members of the department were supportive in the sense that they privately stressed this was horrific behaviour, and helped me to find a new advising situation. Right before I switched advisors, my ex-advisor tried to formally bring sanctions upon me, and thankfully the chair and the equivalent of our graduate board cleared my name and denied the sanctions.
+        <span class="readmore"></span>
+        <span class="more hidden">
+        For that I am grateful, but department leadership also didn't want me to file a formal complaint on my end. I had scores of emails and witnesses to the abuse, and they promised they would deal with this internally. If a conversation was held, it had little to no effect; other graduate students have been psychologically abused by this professor since then. I've had to deal with long-standing mental health issues as a consequence of the abuse. Academic culture must include consequences for toxic advisors, and justice for harmed students.
+        </span>
+                      </div>
+        <div class="tags"> Lack of Support; Gatekeeping and exclusion; Bullying, gaslighting, stalking, abuse; Mental illness; </div>
+        </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>Disgusted!</h3>
+                <div class="content">
+
+        Since I was a kid I loved astronomy, the night skies, and space exploration, having been born just a few years after Sputnik. But as soon as I started on the academic path (getting my first, second, and third degree), I realized that the same kind of obnoxious people you sometimes meet at school (kids who lie, who cheat, who are bossy) are actually everywhere...even in astronomy. I thought people grow up, but they actually don't. I knew that those kinds of people were a little bit everywhere, and more so in politics, but I thought Science was for the scientific mind, not the jackass. How wrong was I? How many incompetent "professors" are everywhere? And the more bully-ish and louder they are, the higher they get in their career, and the more they will influence all decisions being made in the department.
+        <span class="readmore"></span>
+        <span class="more hidden">
+        Just in the last year, a senior professor in my department managed to have two of his protegés hired among a large pool of much more competent candidates. It all comes down to politics and power.. there is no more astronomy there anymore. If that's what he is doing in the department, who knows what he is doing in his publications, or even worse, in his reviews of other people's work.
+        <br><br>
+
+        The problem is a human problem which should not be allowed to propagate like Covid-19. There should be strict rules for hiring and anyone breaking these rules should be laid-off immediately. Also hiring should be on the basis of merit and competence, not on the basis of personal interest and gain. The problem in astronomy is worsening as there is a huge pressure known as "publish or perish", which makes people publish a little bit of anything. How many times have I seen a senior researcher publish crap with a lot of bla bla bla but no solid content? But seniority obliges and again power comes before academic excellence and scientific knowledge. A pity!
+        <br><br>
+
+        To make things worse, the system has invented a way to help those selfish people believe in themselves by classifying the academic members according to the number of publications and citations. While this does bring some genuinely competent people to the top it also includes a large pool of people who I know shouldn't be there in the first place. While other people who do serious work, for some reason, don't find their names in the list of the "highest" ranked members of the scientific community.
+        <br><br>
+
+        It's a little like questioning history itself; it all depends on who writes it. I find it disgusting that it all comes down to this: human greed. People are often not behaving in an ethical manner. It need not be explicitly in the form: one kind of people against a different kind of people (religion, ethnicity, sexual orientation, ...). Rather it is trait of the human species due to evolution, which is the same problem the world is facing as a whole today: the stupid selfishness of a few individuals is putting the entire planet at risk, be it Covid-19, global warming, authoritarianism, deforestation,...
+        <br><br>
+
+        History repeats itself, not only over time, but over all aspects of humanity.
+        </span>
+                      </div>
+        <div class="tags"> Gatekeeping and exclusion; Scientific misconduct; </div>
+        </div>
+        </div>
+
+
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>Academia Systematically Drives People Into Burn-out</h3>
+                <div class="content">
+
+
+        While there are many very positive aspects of working in academia (not least the vast majority of colleagues being very nice, friendly and supportive) there are many "features" of how academic careers work that are virtually guaranteed to force many scientists into psychological problems, even up to the point of burnout. To name just a few:
+        <br><br>
+
+        (1) The imposter syndrome often leads to the false impression that only oneself is struggling, and thus doing something wrong.
+        <br><br>
+        <span class="readmore"></span>
+        <span class="more hidden">
+        (2) Immense pressure from seemingly omnipresent competition with everyone else ("publish or perish", "work and talk about it").
+        <br><br>
+
+        (3) "Changing continent" every 2-3 years in the pursuit of "the next position" prevents people from embedding themselves into a safe social environment (friends, family, etc) which makes them less resilient to stress.
+        <br><br>
+
+        (4) Frustration and hopelessness due to a lack of long-term career perspectives. It is a well known fact that there are many more PhD students than postdoc positions, and many more postdoc positions than permanent positions.
+        <br><br>
+
+        (5) Similar to the imposter syndrome, everyone is always "excited" about their latest results or some recent publication they read. While this displayed "excitement" is a method competing for attention, its permanent overuse leads to feelings of frustration, doubt or resignation if one is not "excited" all the time about one's own work or results.
+        <br><br>
+
+        (6) The constant "change of continent" every 2-3 years makes it virtually impossible to have an emancipated relationship where the partner can also follow her/his own career. It is incredibly hard for children who cannot properly take root in their schools or form long-term friendships. It is also incredibly difficult to build a pension or even get one's own house.
+        <br><br>
+
+        There are many more factors which together systematically tap into the personal resources of scientists, causing wide-spread psychological problems for many of us. While many of these factors originate from the best intentions for people and the productiveness of science, "good intentions" are the opposite of “good”. Together, these factors conspire to turn the scientific career into something that can be very damaging and harmful to the health of those who attempt it. The way academia is working today is simply not sustainable! It has turned into an (unintentionally) destructive overexploitation of scientists at all(!) career levels.
+        </span>
+                      </div>
+        <div class="tags"> Burnout and stress; Career insecurity; </div>
+
+        </div>
+        </div>
+
+
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>Wish The Community Would Care About The Truth, Not The Names!</h3>
+                <div class="content">
+
+        It has become an acceptable trend that people who work in larger, more famous groups can just claim anything they want without being really true, and no one fact-checks them or questions them when they are wrong. In particular, when it comes to scientific publishing/presentation, it has happened multiple times that people claim this is the first time that you are seeing this and we are the first one doing that etc., and I am sitting in the audience with my mouth open that they ignore my work in my face! This is not a one-time event, and absolutely not only about me.
+        <br><br>
+        <span class="readmore"></span>
+        <span class="more hidden">
+        This has become a trend, especially for those working at famous US institutes who feel like since they are part of this prestigious group that is known in the world, they can ignore previous works in the literature and claim to be doing everything for the first time/in the best way etc. I have personally contacted the speakers multiple times and asked if they have seen my work or that of other European groups on the topic, and their answer is ""yes, sorry, we didn’t mean to ignore those, of course we're familiar with your work and that of other groups!"" But then I am like; but you conveyed a totally different, false message to the community.
+        <br><br>
+
+        Similar stories when I showed them there are issues with some of their work that is popular in the field; their response was like; ""hmm, strange, we didn’t think that would be the case"". And that's it; no effort in improving their future connected works because that would take their time and no matter what they do, the community buys it.
+        One of the typical answers I have heard multiple times from these groups when you ask whether they have looked into a matter is: ""no, we haven’t investigated that but we are sure that’s not the case."" ! This is a scientifically problematic sentence; how can you be sure of something you haven’t even looked into?! This is the result of our academic environment that allows such false self esteems to grow and on the contrary, pushes the rest of the community out.
+        <br><br>
+
+        This has to stop! Not only about this particular group/institute, but in general, as scientists, we need to be critical of what we hear, and have to question those who claim things without being able to prove their claims. People should be kept accountable if they lie, regardless of how famous or popular they are in the field. I am a junior scientist and this has been extremely discouraging for me and many others who don’t have those powerful names/groups behind them. The more I see these trends, the more I see myself closer to leaving academia despite my love for science and Astronomy. No matter how hard we try, we will never be heard since what everybody cares about is the names that are supporting a particular person and how great they are able to exaggerate, not the actual science produced."
+        </span>
+                      </div>
+        <div class="tags"> Gatekeeping and exclusion; Leaving or left academia; Classism; </div>
+        </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>Unfair And Wrong In Every Sense</h3>
+                <div class="content">
+
+
+        I have been witnessing a story that might not be that uncommon but usually doesn’t come out. One of the PhD students in our institute who was working on a topic for years (from their master’s thesis up into their last year of the PhD), suddenly appeared interested in a totally different topic (still astronomy, but something totally different in any aspect you can think of). It seems alright so far; people can have different interests over time. But then, this student appeared to be particularly close to one of the famous scientists at our institute who also happens to be a close friend/collaborator of the director of the institute. Both of these two famous, important people in the field, work on this new topic that this student is suddenly very interested in. Within a month or so, two papers were published on the new topic; one the student is the first author and the other two scientists are co-authors, and in another one the student is the second author.
+        <br><br>
+        <span class="readmore"></span>
+        <span class="more hidden">
+        We, other fellow students, were surprised by how talented this student is who could in a month learn a totally new topic they never worked with, to an extent to be the first author on one paper and the second author on another one. We approached them and asked some questions about their work/method etc. Guess what! The student wasn’t able to explain what they did in the paper! It was obvious that the paper was written by the other big male scientists who seemed to have a lot of special interests in this female scientist. One of them in particular had behaviours that are (put in the best way) in the grey zone. She didn’t seem to be bothered by that since what she has got in return appears to be worth it for her!
+        You don’t need me to tell you that after she finished her PhD, with the obvious support of these two famous scientists, and the list of publications that they made for her, she got very prestigious fellowships, and not even halfway through her first postdoc, she has now been offered a permanent position.
+        <br><br>
+
+        I am sure this is not the only story and there are many similar stories in our community. I am doing my last bit and will quit soon since I won’t have any of those supports in order to get a position in academia.
+        </span>
+                      </div>
+        <div class="tags"> Gatekeeping and exclusion; Leaving or left academia; Scientific misconduct; </div>
+
+
+        </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>Was It Worth It?</h3>
+                <div class="content">
+
+
+
+        "My birthplace was beautiful. I miss my family, the sea, and the lifestyle. But not a lot of opportunities for physics and especially astronomy existed there. No funding, no room for new ideas. Back then I still wanted to learn, teach, change and contribute to this world. Have an impact. And thus I left this place hoping I could find lands that are more fruitful. It has been 10 years now that I have been far away from there and I look back and I ask: Was it worth it?
+        <br><br>
+
+        I arrived at the first stop of my journey in the early 2010’s. It was so far. A top 50 university! It looked nice, organized and different. I was called a strange name in the streets sometimes because I was different from the locals, but it didn’t bother me that much and the university did not allow this behavior within its limits. I studied hard, I wrote my papers, I presented my work at conferences and was hoping that I can be part of this society and contribute to it.
+        <br><br>
+        <span class="readmore"></span>
+        <span class="more hidden">
+        However, I soon received my first rejection for a paper that was part of my PhD and I could not understand. Maybe I did something wrong? But what I was seeing in the report was not making any sense. They were saying I was not competitive enough!? They were saying that I have to understand the thing I am discussing if I want to write a paper about it!? They were saying that my work is not up to the standards of other people who were the top two people in the field. I was suggesting something new but my paper showed that some of the "top people in my field" could be wrong and this can’t be right according to the reviewers. Two reviewers and two editors decided I was wrong that day, despite my efforts and logical arguments. I was very disappointed. My research and PhD were delayed. I decided to work harder and learn more. But I am sure, even if I was wrong about the research part, this report could have been more polite and more constructive. I am strong, I can handle some (impolite) disapproval. I was sure about one thing though. Some people, with power, when anonymous can turn into bullies. Later in my research years, I looked through this report and showed it to others. And they were shocked by the treatment I received and what was written in this report which soon would be proven to be 100% wrong from the recent findings of the community. I deserved better and I received unfair treatment. I know it now but I did not know it then! I thought that what the reviewers were doing was normal!! Could no one protect me from this?
+        <br><br>
+
+        Time passed and I made it in time. I had the doctorate in my hands - from a top 50 university! People would take me seriously now. I started applying for job openings at universities in the same country, wishing to give something back to the society that gave me that degree, since it was a state scholarship that supported my research. The only problem was they did not want to keep me. What a waste of resources!! What was required from me was to have two first author publications, be awarded a degree and just go my way. This would increase the "rankings" of the university. I look back and I try to see what went wrong. I was not included in any major group/collaboration of the department even though it had a lot of these groups/collaborations. My supervisor included many other PhD students in these teams! Maybe I was not "competitive" enough in their eyes. My scholarship was not part of my ‘supervisor’s’ funding so it did not matter if I succeeded or not? Why did they exclude me so easily?
+        <br><br>
+
+        It was time for the second stop of my career. I learned the local language to an adequate level. The place reminded me of my country in a way (despite the fact that it was so far from my birthplace). They were not calling me strange names in the streets as this time I looked similar to the locals. It was a good university in my eyes. In what they called rankings it was like 150–200. Not bad at all. How are these rankings decided? And there I learned more and slowly realized something.  My research during my PhD was actually correct! I worked hard and it was all there in a new paper. A lot of these "top people in my field" (let’s call them elite in this letter) were actually wrong and I proved it!. The field had progressed a lot and there were actually lots of people who were agreeing with my findings. I got accepted TO THE SAME JOURNAL THAT BACK THEN REJECTED ME!!! Now everyone would see my contribution. I can have a job in astronomy! Always doing research. Be a professor and teach students after the next postdoc or fellowship. My dream, my purpose, my contribution to this world!
+        <br><br>
+
+        It was time for a job search once again. My independent funding would end soon. My funding was a very good state fellowship which paid very well but only lasted three years. Other postdocs were getting offers with much less money for two or even one year. This is too brief and flies by fast. I had a partner that I loved and I had to try hard to go to a nice place. The search though was not going well. My circle was surprised. How can it be?? My CV was "competitive" this time. State scholarship back then, state fellowship here and I was even included in some collaborative efforts. It seems that for some reason, in order for employers to hire us, they check how many papers we have, how many citations we have and who is writing our recommendation letters. And I had a good number of those, but not the "best". Besides that my research was right, novel and interesting it did not matter for almost anyone other than 10–20 people. There were always one or two people each time that had the best metrics for recommendation letters from really influential people. How am I supposed to compete with this? Collaborations of 30 people (or even more sometimes) working together below a "god of the Elite". This was the secret all along. There is an unspoken contest for which people, groups and universities will have the better "numbers/metrics". The one with the "best" gets the funding and the postdoc/professor positions! Why did nobody tell me about this war? I applied to 90 jobs. Five times I was shortlisted in second place after being interviewed 15 times and did not get a single job offer. Why do we have so few job openings? Why are these only for 1–3 years? Why do we have to compete in a game that is set from this war between giants …?  Scientists are supposed to be treated better in society. We bring change, technology, knowledge … Why do we get such bad working conditions!? Why do we have to reset our lives every 2 years?
+        <br><br>
+
+        My contribution was just ignored in the end … The community kept making the same mistakes over and over … Just because someone from the Elite wrote something 20, 10 or 5 years ago and it was acknowledged as the truth … No change at all … No progress.
+        <br><br>
+
+        I stayed without a job for some months, no visa, returned to my country, beaten. I broke up with my partner and was trying to find any job there, my whole life was in chaos. One word came to mind, pointless. Other friends understood it earlier. They left academia. They tried to become data scientists. From analysing the cosmos and galaxies they decided to use their abilities to help companies make more money. How can I blame my friends? I saw 80% of them leaving academia in a matter of 2–3 years after their PhDs. They had dreams like mine. They were very smart. They were hard workers. They loved astronomy like me! They all had doctorates from top 200 universities. They were not lucky enough though to work with the "right" people at the "right" time and be part of an army during the "war". A friend of mine told me "I want to have a family. It does not make sense to keep trying for this." This friend is much happier now working in industry. I am happy for that friend and wish them the best.
+        <br><br>
+
+        By the end of that year, I was disappointed in myself mostly. Why did I not know the situation that I got myself into years ago?  Why did nobody tell me? I felt something new … This time it was not love for my field. Not desire to contribute to any society. Not desire to be a professor and teach the young generation. THIS TIME IT WAS PURE ANGER TOWARDS THIS SYSTEM THAT JUST THREW ME OUT LIKE GARBAGE. I visited some doctors because I was not feeling well. I did not mind anymore even for my own well being. They said it is good I went for help since I was suffering from extended depression for more than 1.5 years. I was close to hurting myself for WHAT??? I understood something was wrong and I am grateful my family helped me. What if I was alone in another country at that moment though? Would anyone have cared?
+        <br><br>
+
+        And then it happened!! Fellow for the second time! A fancy position with a very good salary. It was application number 102 this time. I was going somewhere unexpected. I received 3 other offers that I declined. I was intrigued by this new place. Most people underestimate this country a lot … thinking it is backwards but I was surprised and I had nothing to lose … I did not know until I saw (lived) it. This place was actually much more advanced than any other place I have been so far. The university was at that moment rising … trying to be as "competitive" as it can be. It was fighting for some reason the "war" that had started the last years between the giants of the ranking system. And I said to myself I will not let them down. I WILL NOT LET MYSELF DOWN. I worked hard … and I was glad to contribute. Why do these numbers matter so much for you people? Is it money because you can advertise the universities better to potential students who will pay more fees? More support from the government? Is it status? Does anyone care about our wellbeing anymore?  Why was the best position (funding, time of the project, management, HR, inclusiveness, support) given to me by a country that is considered backwards? What does that mean for the top universities of the other countries? Are they the ones that are backwards? Should we forget this unfair, outdated, nepotistic and inhumane ranking system?
+        <br><br>
+
+        I was becoming more "competitive" with time. Time passed and I have been here for two years and I feel much better. It is that I can contribute and I feel needed. It is that people are willing to work with me and they include me. I am working with people from the second stop of my travels because they still want to work with me too! And it is a good collaboration fruitful for both sides. My previous research is doing just fine and this time is proven beyond correct in another novel paper to be accepted once again. I receive respect in my new workplace, a better grant due to my good performance and even support from people that are considered elite. I don't think it is pointless anymore. But I am not as naive as back then. I know that most likely I will not make it to professor or get a permanent position because of my unlucky start.  Also the positions are just so few. However, I have hundreds of ideas and some more passionate talks to give. I feel I have some strength left here.
+        <br><br>
+
+        Now I am a reviewer to almost any major journal.  And I was surprised … I was not dead inside. Why were these people so nasty to me back then? I was a "good" and fair reviewer from my point of view. I try to be as polite and humane because I know that I am reviewing the work of a fellow human being. Sometimes I even give compliments to the authors without papers to motivate them if I really like their work (and this has happened lots of times already because there are lots of young people who see the mistakes of the past generation, hoping they will live in a better environment). I repeat. I know I most likely will not get a permanent position in astronomy or become a professor. I don't have the "correct" initial conditions (class, race, background), connections (core member of a big collaboration, recommendation letters from the Elite) or metrics (which will never reach the ones of people that work smoothly from their bachelor degree with the right or "right" supervision).
+        <br><br>
+
+        Was it worth it? Would I make the same choice again if I knew all of this?
+        <br><br>
+
+        I feel I have to ask for forgiveness from my family which begs me to stop pursuing an astronomy career and be "normal" since they honestly care about my wellbeing. I am not "happy" in the conventional way but if I stopped I would not be "happy" either. I hope for everyone else to be really happy anyway it fits them the best.
+        </span>
+                      </div>
+        <div class="tags"> Lack of Support; Gatekeeping and exclusion; Burnout and stress; Racism and racial slurs; Mental illness; Self harm, suicidal thoughts and suicide; </div>
+        </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>Belittling</h3>
+                <div class="content">
+
+        I am a junior postdoc researcher and last year one of my published works which had cool, new results got special attention and was published as a press release in one of the scientific online magazines. I have been working on this for my entire PhD and getting these nice results now in my first postdoc was of course very pleasing to me. So, excited to find out that my work is being published as a press release, I came and announced it in our group meeting (consisting of 5 people). My boss’s comment was: "Haha, pretty pictures do the job". So from his perspective, it's not that I have great results that are being praised but the beautiful picture is what attracts attention! I have heard him saying the same thing another time on someone else’s work too … It's so discouraging … Because his works haven’t gotten that attention, he's belittling those who do …
+        </span>
+                      </div>
+        <div class="tags"> Lack of support; Gatekeeping and exclusion; Bullying, gaslighting, stalking, abuse; </div>
+
+        </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>Power Abuse In Science</h3>
+                <div class="content">
+
+        I have been dealing with a conflict at my work recently. I am a postdoc fellowship holder; meaning that I pursue my own research topic. Obviously, I joined a group at an institute who offered this fellowship and started working there, but carried out my own research. I presented some of my new results during our group meeting and discussed it a bit with the group members. I have literally done everything related to this project myself; from defining it, to analysis and final results. Now after that meeting, the group leader keeps talking about that as "our" work and wanted to use my results (according to him: "our" results) in a proposal to apply for his own personal funding. I disagreed and argued that this has been 100% my work and I don’t want to give it to him, but he argued that as group members we have to share everything, and if I am not willing to do that it is because I am not a team worker!
+        <span class="readmore"></span>
+        <span class="more hidden">
+        We talked for a long time and did not come to an agreement but in the end I had to give it to him because my future depends on him. I will eventually need him to extend my contract, and will also need his recommendation letters in the future, so I do not have much power. This is literally power abuse because it will never happen other way around that I would ask him to give me some of his new results, that I am not involved in, to put in my future proposals. I wish there was a way to take away their power and see how much of a fairer system academia will turn into.
+        </span>
+                      </div>
+        <div class="tags"> Scientific misconduct; Lack of support; </div>
+        </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>Scientific Racism</h3>
+                <div class="content">
+
+
+        I am a final year international PhD student in a good institute in Europe. Our city has quite a few astronomy institutes and they are all relatively international. I just defended my PhD but have a few more months remaining in my contract. Although of no importance internationally, here they grade the PhD defences/thesis and throughout the country, these grades matter for future hiring etc. Even though they are proud of having many international students, local students are treated differently from the rest. The locals get unfair support that puts us all out of the game in the future. Apart from a lot more attention and praise the locals get for their works, they grade the final thesis/exam in an absolutely unfair manner by giving the locals way better grades than the international ones. This is not a matter of one or two cases; more than 90% of the top grades go to the local students (the population ratio is 40-60 for internationals), and this does not justify their values. If you look at the postdoc
+        <span class="readmore"></span>
+        <span class="more hidden">
+        fellowships that students get, you will see how many international students win very prestigious fellowships worldwide after their PhDs here, none of them get a top PhD grade in this system. But the numbers are relatively low amongst those locals who did get a top grade. This will however become important for more permanent positions in this country as it is where the grades play a role. Sure they can decide to treat their own nation better and hire more locally but they should be clear about that and see how many international students will choose to work here.
+        </span>
+                      </div>
+        <div class="tags"> Gatekeeping and exclusion; Racism and racial slurs; </div>
+
+        </div>
+        </div>
+
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>Moral Harassment</h3>
+                <div class="content">
+
+
+        It is difficult for me to write this letter because it takes me back to a very painful time.
+        Six years ago, I lived through a very painful experience of moral depression and exclusion. The management of my university wanted to propose me for a very high national distinction and informed the director of my laboratory, asking him to compile an application file for me. I didn't know this at the time because the people involved in this award don't have to do the application themselves and may not be aware that they have been nominated for this award. I found out a few months later that my director had made no application for me and had not even bothered to respond to the university. When I found this out, I was devastated.
+        <br><br>
+        <span class="readmore"></span>
+        <span class="more hidden">
+        Realising that my director did not want to put my name forward for a high state honour was a shock. The proof of the contempt for me that this attitude showed was unbelievably violent: a deep wound and a great anger at the same time. And on top of that, I was ashamed of myself, ashamed for the university management that had done me the honor of choosing me but had had no feedback, ashamed of myself with the question "don't I deserve a little bit of that?". And also the deep conviction that he will never have shown so much contempt, act like this for a male colleague.
+        <br><br>
+        I sank into a deep depression for months. Coming to the laboratory was painful, I was afraid to meet my director. I was no longer able to progress in my work, to invest myself with my collaborators. I cut myself off from them and I never managed to get back on track. This period broke my work, which I had always done with passion. I have remained very isolated since then, and I suffer from it because I am not well considered by my colleagues. He continued to progress in his career …
+        <br><br>
+
+        I was not able to talk to my director at the time and, despite the years, I have never been able to talk to him since about this profound damage on my self-esteem and my morale. Only a handful of people in my laboratory know about it.
+        I am infinitely grateful to your initiative which allows me to express for the first time this mental distress, this breaking due to this painful ordeal.
+        </span>
+                      </div>
+        <div class="tags"> Lack of Support; Gatekeeping and exclusion; Sexism and misogyny; Mental illness; </div>
+        </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>AcADHDemia</h3>
+                <div class="content">
+
+
+        I have ADHD. It's impacted me all my life, but I've only had a name for it recently. I was diagnosed 5 years ago, and suddenly everything made so much more sense. I didn’t know that’s what I was going to find when I first started seeing a therapist, just that I was struggling. Working with a therapist has helped, before and after I was diagnosed. Just knowing that I have ADHD has been helpful too, because I have a better understanding of how my brain works. I am learning how to work with it, not against it. I also know now to look for advice specific to ADHD brains and not neurotypical brains. But it hasn't made all my problems disappear and I still struggle.
+        <br><br>
+        <span class="readmore"></span>
+        <span class="more hidden">
+        Maybe you’re thinking that ADHD is something that hyperactive boys have and grow out of. Not so. All genders can have ADHD. It often manifests as inattention as opposed to hyperactivity, in which cases it is diagnosed far less often. And ADHD will follow you into adulthood; you might find ways to manage it but it doesn’t go away. I bet you know quite a few folks who have ADHD and hide it, some of them may have been diagnosed as kids and others as teens or adults. I bet you know others who have it and don’t know it, but struggle just the same. ADHD often comes with comorbid conditions too — mine comes with a side helping of Anxiety — that can also be very impactful, sometimes more than the ADHD itself.
+        <br><br>
+
+        I've encountered situations in the workplace that would be stressful to anyone — high workloads, bullying, job uncertainty — and been stressed by them. But the thing that impacts me personally most of all, and most consistently, is trying to navigate academia with ADHD. I find everything hard because the system wasn't created for brains like mine. My mental health is most impacted by trying to pass as neurotypical in an environment that isn't set up for, or welcoming of, neurodiverse folks. Academia values our brains above all else (how else do you explain “well yes, he did sexually assault some of his grad students but he does great science!”) and mine doesn't work like a lot of other people’s. I don’t feel comfortable disclosing my ADHD to anyone for fear it might impact my employment or how people view me and my work, even if it’s not supposed to.
+        <br><br>
+
+        I struggle day to day. And when I do encounter a stressful situation my ADHD doubles down and makes the regular things even harder, let alone the stressful stuff. The pandemic has been one long stressful situation and I’ve not been able to manage my ADHD as well as usual. I’ve also not felt able to tell anyone why I’ve been struggling so much, instead I put a brave face on it and hope no one notices or just passes it off as “the pandemic”. Which isn’t to say that the pandemic has not been extremely impactful and detrimental to everyone’s mental health. But we all started from a different place, and some of us weren’t doing so well before.
+        <br><br>
+
+        I’ve focused on ADHD here because it’s what I’m most familiar with, but neurodiversity exists in many forms and can be impactful in many different ways. Some folks may see parts of themselves in this letter, and some may not. Know this is one experience of many.
+        <br><br>
+
+        Finally, I have some things to say:
+        <br><br>
+
+        1. If you’ve been wondering if you should maybe see a therapist but have been talking yourself out of it because “it’s not too bad” or you don’t want to be a person who sees a therapist…. See a therapist. You may not be diagnosed with ADHD like I was! But it’s helpful to talk. I thought about it for a long time before I finally made an appointment and I wish I’d gone sooner. Maybe you’ll go weekly, maybe monthly, maybe just a couple of times, do what you need. Try a few different people and see who you click best with, and if you don’t click with someone immediately, don’t give up.
+        <br><br>
+
+        2. Not all differences are visible. You don’t always see neurodiversity, but we’re here.
+        <br><br>
+
+        3. If you have ADHD, you’re not alone. You do belong here, even if it doesn’t always feel that way.
+        <br><br>
+        </span>
+                      </div>
+        <div class="tags"> Lack of Support; Burnout and stress; Sexual Harassment, sexual violence; Mental illness; </div>
+
+        </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>Punished For Being Honest</h3>
+                <div class="content">
+
+        As I studied and got my PhD in my home country, I felt that I needed, both personally and professionally, to find a first postdoctoral position abroad, preferably in a distant and culturally different country. Then I came across a call for postdoctoral fellowships in a large academic institution in one such country. The candidates were required to be endorsed by a tenured researcher in that institution, but neither my PhD supervisor nor I knew any collaborator there. Therefore I simply looked for someone that matched my research interests among the researcher profiles in the institution website. This is how I found Dr. [XXXX], who immediately agreed to endorse my fellowship application, and we agreed on a common research plan to work together. The application was successful and I could start my new position shortly after my PhD defense.
+        <br><br>
+        <span class="readmore"></span>
+        <span class="more hidden">
+        At the beginning, Dr. [XXXX] was extremely friendly, supportive with me, and even charming. He appeared to be especially interested in me joining an international collaboration where my expertise would be particularly appreciated, according to him. However, when I started to know more about that collaboration, I began to suspect that Dr. [XXXX] was not being honest with me. What he actually expected from me is to help them get access to the unpublished results of a decade-long project that was carried out by my PhD supervisor and his collaborators. I did not really participate in that project but my PhD supervisor let me use part of the unpublished results to help with the analysis of the data from my thesis.
+        <br><br>
+        Little by little, Dr. [XXXX] became less friendly and began to put pressure on me, until he openly asked me to trick my PhD supervisor into sending me his unpublished results. Specifically, Dr. [XXXX] suggested to me that I needed his results just to make further tests only for me. Of course I refused to do that.
+        <br><br>
+        After that, he started to demand a lot of work that did not make sense. I also noticed that he was trying to isolate me from the collaborations where I would have really been able to contribute.
+        <br><br>
+        The worst situation was about a large meeting on my research topic that was being organized in our research centre. Dr. [XXXX] knew about this meeting long before it was publicly announced (and this knowledge was later admitted to me by other colleagues, including the Chair of the LOC). Nevertheless, he asked me to register for a different conference, whose topic was less compatible with my research interests, on the same dates but in another country. He urged me to pay the conference fees and buy the plane tickets from my own pocket as soon as possible, because he allegedly needed to know exactly how much money I needed to get reimbursed from his project. The day after everything was paid, he suddenly told me that he was just informed of the existence of the meeting in our research centre. To prove that he was lying, I only had to question other colleagues that were involved.
+        <br><br>
+        When I became fully aware that Dr. [XXXX] was trying to destroy my academic career, I suffered a panic attack. The following three days I was unable to leave my home, and had suicidal thoughts. I developed an anxiety disorder and I needed long-term psychological treatment. As a consequence, my academic career was at an impasse, it took me 3 years to publish again as a first author. Now I am psychologically recovered, but not academically recovered yet.
+        </span>
+                      </div>
+        <div class="tags"> Lack of Support; Gatekeeping and exclusion; Burnout and stress; Mental illness; Self harm, suicidal thoughts and suicide; Scientific misconduct; </div>
+      </div>
+      </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>PhD Advisor</h3>
+                <div class="content">
+
+        During my last year of the PhD, I went through a very rough time, when I felt left alone and quietly disappointed. It was about a year and a half before my PhD came to an end, that I was trying to apply for postdoc positions. At that point, I was only applying for independent fellowships since I knew I had more time left, so in principle, I would have a chance to apply in the next round too. My supervisor was very busy at the time and even though I sent him the draft of the proposal, he didn’t give me any feedback. I only applied for a couple of fellowships but didn’t get any of them. After I finished my PhD in the winter, I got a few months of "bridge funding" to work on my project while applying for future positions. I had done a good PhD and had ongoing exciting projects that I would’ve loved to continue working on.  Meanwhile, my supervisor asked me to send him some of my plots from my work so that he could apply to get funding to hire a postdoc. I obviously did so as he was my supervisor who had been leading me throughout the PhD. Shortly afterwards, I was applying for fellowships with similar proposals to the ones from my last year but with better results and publications that would boost my chances.
+        <br><br>
+        <span class="readmore"></span>
+        <span class="more hidden">
+        One day my supervisor sent me their proposal for comments since it had my plots in it, and that's when I realised it's extremely similar to my proposals; not only was it using my plots, but also the goals and objectives were literally the same as what I was proposing to do. The difference was that of course my supervisor can write a much better proposal than I can. Anyway, he got the funding and announced that he wanted to hire someone to work on exactly what I had been proposing to work on. I was feeling very confused and shocked, wondering what to do; obviously, I wouldn’t have been able to compete with my own PhD advisor. So, I thought the best way forward would be to talk to my PhD advisor. I told them that what they had proposed is literally what I had been proposing and had already sent them last year, and now they are proposing to hire someone to do exactly what I do. They said (and I clearly remember their exact sentence to this date): "Yes, I realise that". They continued: “if you happen to get a fellowship to work on the same topic, then we probably can find a way to collaborate on this.” I was left in shock and confusion (I can’t even explain my feelings in words), I felt like I was worthless and that my supervisor wanted me to quit and didn't think I would even get a position. He also gave me a very hard time during my PhD defence and made me feel miserable; I had nightmares and sleeping issues weeks after that...  Eventually, I did get a prestigious fellowship and started working on my projects. But then my supervisor also hired someone for the same project and asked me to share all the private data and codes that I had, but I stood strong and told them I can’t do this since it's not a broad project that can be shared between two postdocs. I told them that I could only do so if we come up with two clear paths for each of us to work and collaborate on, otherwise it does not make any sense. This obviously never happened and we have been in conflict ever since and I already emailed my previous advisor a couple of times for various matters and didn’t get an appropriate response back... I know to this point that I will not have their support in my future and yeah, not sure what to do when it comes to the next application round and recommendation letters...
+        </span>
+                      </div>
+        <div class="tags"> Lack of Support; Gatekeeping and exclusion; Career Insecurity; </div>
+        </div>
         </div>
 
     </main>
