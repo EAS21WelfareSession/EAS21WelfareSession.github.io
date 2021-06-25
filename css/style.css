@@ -45,6 +45,20 @@ Contains title, explanatory text and checkboxes for tags.
     margin-top: 2em;
 }
 
+#tagselector ul {padding-left: 0;}
+
+#tagselector ul li {
+    display: inline;
+    padding-right: 1em;
+}
+
+@media screen and (max-width: 480px) {
+    #tagselector ul li {
+        display: list-item;
+        list-style-type: none;
+    }
+}
+
 .dropdown-host {
     position: relative;
     display: inline;

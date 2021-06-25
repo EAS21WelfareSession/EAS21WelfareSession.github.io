@@ -9,7 +9,7 @@
     <script src="js/main.js"></script>
 
 </head>
-<body>
+<body onclick=""><!-- Empty onclick handler to ensure "?" icons work on iOS, see https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html -->
     <header>
 
         <h3>The EAS Special Session on Welfare and Mental Health in Astronomy Research</h3>
@@ -24,111 +24,125 @@
 
         <div id="tagselector">
             Select letter tag to show:
-
-            <input type="checkbox" name="Lack of support" id="Lackofsupport" checked onclick="filterCards()">
-            <label for="Lackofsupport">Lack of support</label>
-
-            <input type="checkbox" name="Gatekeeping and exclusion" id="Gatekeepingandexclusion" checked onclick="filterCards()">
-            <label for="Gatekeepingandexclusion">Gatekeeping and exclusion</label>
-            <div class="dropdown-host">
-                <span class="icon">?</span>
-                <div class="dropdown">Gatekeeping is the activity of controlling, and usually limiting, general access to something.</div>
-            </div>
-
-            <input type="checkbox" name="Burnout and stress" id="Burnoutandstress" checked onclick="filterCards()">
-            <label for="Burnoutandstress">Burnout and stress</label>
-            <div class="dropdown-host">
-                <span class="icon">?</span>
-                <div class="dropdown">Burn-out is a syndrome conceptualized as resulting from chronic workplace stress. It is characterised by feelings of energy depletion or exhaustion,
-increased mental distance from one’s job, or feelings of negativism or cynicism related to one's job, and
-reduced professional efficacy.</div>
-            </div>
-
-            <input type="checkbox" name="Leaving or left academia" id="Leavingorleftacademia" checked onclick="filterCards()">
-            <label for="Leavingorleftacademia">Leaving or left academia</label>
-
-
-            <input type="checkbox" name="Bullying, gaslighting, stalking, abuse" id="Bullying,gaslighting,stalking,abuse" checked onclick="filterCards()">
-            <label for="Bullying,gaslighting,stalking,abuse">Bullying, gaslighting, stalking, abuse</label>
-            <div class="dropdown-host">
-                <span class="icon">?</span>
-                <div class="dropdown">Bullying is the use of force, coercion, hurtful teasing or threat, to abuse, aggressively dominate or intimidate. Gaslighting is manipulating someone by psychological means into doubting their own sanity.</div>
-            </div>
-
-            <input type="checkbox" name="Sexual Harassment, sexual violence" id="SexualHarassment,sexualviolence" checked onclick="filterCards()">
-            <label for="SexualHarassment,sexualviolence">Sexual Harassment, sexual violence</label>
-
-            <input type="checkbox" name="Racism and racial slurs" id="Racismandracialslurs" checked onclick="filterCards()">
-            <label for="Racismandracialslurs">Racism and racial slurs</label>
-            <div class="dropdown-host">
-                <span class="icon">?</span>
-                <div class="dropdown">  Racism is prejudice, discrimination, or antagonism by an individual, community, or institution against a person or people on the basis of their membership of a particular racial or ethnic group, typically one that is a minority or marginalized.</div>
-            </div>
-
-
-
-            <input type="checkbox" name="Homophobia, biphobia, transphobia" id="Homophobia,biphobia,transphobia" checked onclick="filterCards()">
-            <label for="Homophobia,biphobia,transphobia">Homophobia, biphobia, transphobia</label>
-
-            <input type="checkbox" name="Ableism" id="Ableism" checked onclick="filterCards()">
-            <label for="Ableism">Ableism</label>
-            <div class="dropdown-host">
-                <span class="icon">?</span>
-                <div class="dropdown">Discrimination in favour of able-bodied people.</div>
-            </div>
-
-            <input type="checkbox" name="Scientificmisconduct" id="Scientificmisconduct" checked onclick="filterCards()">
-            <label for="Scientificmisconduct">Scientific misconduct</label>
-            <div class="dropdown-host">
-                <span class="icon">?</span>
-                <div class="dropdown">Examples include plagiarism and the intentional or gross negligence leading to fabrication of the scientific message or a false credit or emphasis given to a scientist</div>
-            </div>
-
-            <input type="checkbox" name="Hateful language directed at religious groups" id="Hatefullanguagedirectedatreligiousgroups" checked onclick="filterCards()">
-            <label for="Hatefullanguagedirectedatreligiousgroups">Hateful language directed at religious groups</label>
-
-            <input type="checkbox" name="Sexism and misogyny" id="Sexismandmisogyny" checked onclick="filterCards()">
-            <label for="Sexismandmisogyny">Sexism and misogyny</label>
-            <div class="dropdown-host">
-                <span class="icon">?</span>
-                <div class="dropdown">Sexism is defined as prejudice, stereotyping, or discrimination, typically against women, on the basis of sex. Misogyny is defined as the dislike of, contempt for, or ingrained prejudice against women.</div>
-            </div>
-
-            <input type="checkbox" name="Toxic masculinity and misandry" id="Toxicmasculinityandmisandry" checked onclick="filterCards()">
-            <label for="Toxicmasculinityandmisandry">Toxic masculinity and misandry</label>
-            <div class="dropdown-host">
-                <span class="icon">?</span>
-                <div class="dropdown">Toxiic masculinity is a set of attitudes and ways of behaving stereotypically associated with or expected of men, regarded as having a negative impact on men and on society as a whole. Misandtry is a dislike of, contempt for, or ingrained prejudice against men</div>
-            </div>
-
-            <input type="checkbox" name="Mental illness" id="Mentalillness" checked onclick="filterCards()">
-            <label for="Mentalillness">Mental illness</label>
-
-            <input type="checkbox" name="Self harm, suicidal thoughts and suicide" id="Selfharm,suicidalthoughtsandsuicide" checked onclick="filterCards()">
-            <label for="Selfharm,suicidalthoughtsandsuicide">Self harm, suicidal thoughts and suicide</label>
-
-            <input type="checkbox" name="Alcohol, other intoxicants" id="Alcohol,otherintoxicants" checked onclick="filterCards()">
-            <label for="Alcohol,otherintoxicants">Alcohol, other intoxicants</label>
-
-            <input type="checkbox" name="Death or dying" id="Deathordying" checked onclick="filterCards()">
-            <label for="Deathordying">Death or dying</label>
-
-
-            <input type="checkbox" name="Classism" id="Classism" checked onclick="filterCards()">
-            <label for="Classism">Classism</label>
-            <div class="dropdown-host">
-                <span class="icon">?</span>
-                <div class="dropdown"> Prejudice against people belonging to a particular social class</div>
-            </div>
-
-            <input type="checkbox" name="Career insecurity" id="Careerinsecurity" checked onclick="filterCards()">
-            <label for="Careerinsecurity">Career insecurity</label>
-
-            <input type="checkbox" name="Food, eating disorders, body dysmorphia, body hatred, and fat phobia" id="Food,eatingdisorders,bodydysmorphia,bodyhatred,andfatphobia" checked onclick="filterCards()">
-            <label for="Food,eatingdisorders,bodydysmorphia,bodyhatred,andfatphobia">Food, eating disorders, body dysmorphia, body hatred, and fat phobia</label>
-
-
-
+            <ul>
+                <li>
+                    <input type="checkbox" name="Lack of support" id="Lackofsupport" checked onclick="filterCards()">
+                    <label for="Lackofsupport">Lack of support</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Gatekeeping and exclusion" id="Gatekeepingandexclusion" checked onclick="filterCards()">
+                    <label for="Gatekeepingandexclusion">Gatekeeping and exclusion</label>
+                    <div class="dropdown-host">
+                        <span class="icon">?</span>
+                        <div class="dropdown">Gatekeeping is the activity of controlling, and usually limiting, general access to something.
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="Burnout and stress" id="Burnoutandstress" checked onclick="filterCards()">
+                    <label for="Burnoutandstress">Burnout and stress</label>
+                    <div class="dropdown-host">
+                        <span class="icon">?</span>
+                        <div class="dropdown">Burn-out is a syndrome conceptualized as resulting from chronic workplace stress. It is characterised by feelings of energy depletion or exhaustion, increased mental distance from one’s job, or feelings of negativism or cynicism related to one's job, and reduced professional efficacy.</div>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="Leaving or left academia" id="Leavingorleftacademia" checked onclick="filterCards()">
+                    <label for="Leavingorleftacademia">Leaving or left academia</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Bullying, gaslighting, stalking, abuse" id="Bullying,gaslighting,stalking,abuse" checked onclick="filterCards()">
+                    <label for="Bullying,gaslighting,stalking,abuse">Bullying, gaslighting, stalking, abuse</label>
+                    <div class="dropdown-host">
+                        <span class="icon">?</span>
+                        <div class="dropdown">Bullying is the use of force, coercion, hurtful teasing or threat, to abuse, aggressively dominate or intimidate. Gaslighting is manipulating someone by psychological means into doubting their own sanity.</div>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="Sexual Harassment, sexual violence" id="SexualHarassment,sexualviolence" checked onclick="filterCards()">
+                    <label for="SexualHarassment,sexualviolence">Sexual Harassment, sexual violence</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Racism and racial slurs" id="Racismandracialslurs" checked onclick="filterCards()">
+                    <label for="Racismandracialslurs">Racism and racial slurs</label>
+                    <div class="dropdown-host">
+                        <span class="icon">?</span>
+                        <div class="dropdown"> Racism is prejudice, discrimination, or antagonism by an individual, community, or institution against a person or people on the basis of their membership of a particular racial or ethnic group, typically one that is a minority or marginalized.</div>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="Homophobia, biphobia, transphobia" id="Homophobia,biphobia,transphobia" checked onclick="filterCards()">
+                    <label for="Homophobia,biphobia,transphobia">Homophobia, biphobia, transphobia</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Ableism" id="Ableism" checked onclick="filterCards()">
+                    <label for="Ableism">Ableism</label>
+                    <div class="dropdown-host">
+                        <span class="icon">?</span>
+                        <div class="dropdown">Discrimination in favour of able-bodied people.</div>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="Scientificmisconduct" id="Scientificmisconduct" checked onclick="filterCards()">
+                    <label for="Scientificmisconduct">Scientific misconduct</label>
+                    <div class="dropdown-host">
+                        <span class="icon">?</span>
+                        <div class="dropdown">Examples include plagiarism and the intentional or gross negligence leading to fabrication of the scientific message or a false credit or emphasis given to a scientist</div>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="Hateful language directed at religious groups" id="Hatefullanguagedirectedatreligiousgroups" checked onclick="filterCards()">
+                    <label for="Hatefullanguagedirectedatreligiousgroups">Hateful language directed at religious groups</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Sexism and misogyny" id="Sexismandmisogyny" checked onclick="filterCards()">
+                    <label for="Sexismandmisogyny">Sexism and misogyny</label>
+                    <div class="dropdown-host">
+                        <span class="icon">?</span>
+                        <div class="dropdown">Sexism is defined as prejudice, stereotyping, or discrimination, typically against women, on the basis of sex. Misogyny is defined as the dislike of, contempt for, or ingrained prejudice against women.</div>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="Toxic masculinity and misandry" id="Toxicmasculinityandmisandry" checked onclick="filterCards()">
+                    <label for="Toxicmasculinityandmisandry">Toxic masculinity and misandry</label>
+                    <div class="dropdown-host">
+                        <span class="icon">?</span>
+                        <div class="dropdown">Toxiic masculinity is a set of attitudes and ways of behaving stereotypically associated with or expected of men, regarded as having a negative impact on men and on society as a whole. Misandtry is a dislike of, contempt for, or ingrained prejudice against men</div>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="Mental illness" id="Mentalillness" checked onclick="filterCards()">
+                    <label for="Mentalillness">Mental illness</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Self harm, suicidal thoughts and suicide" id="Selfharm,suicidalthoughtsandsuicide" checked onclick="filterCards()">
+                    <label for="Selfharm,suicidalthoughtsandsuicide">Self harm, suicidal thoughts and suicide</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Alcohol, other intoxicants" id="Alcohol,otherintoxicants" checked onclick="filterCards()">
+                    <label for="Alcohol,otherintoxicants">Alcohol, other intoxicants</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Death or dying" id="Deathordying" checked onclick="filterCards()">
+                    <label for="Deathordying">Death or dying</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Classism" id="Classism" checked onclick="filterCards()">
+                    <label for="Classism">Classism</label>
+                    <div class="dropdown-host">
+                        <span class="icon">?</span>
+                        <div class="dropdown"> Prejudice against people belonging to a particular social class</div>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="Career insecurity" id="Careerinsecurity" checked onclick="filterCards()">
+                    <label for="Careerinsecurity">Career insecurity</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Food, eating disorders, body dysmorphia, body hatred, and fat phobia" id="Food,eatingdisorders,bodydysmorphia,bodyhatred,andfatphobia" checked onclick="filterCards()">
+                    <label for="Food,eatingdisorders,bodydysmorphia,bodyhatred,andfatphobia">Food, eating disorders, body dysmorphia, body hatred, and fat phobia</label>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
