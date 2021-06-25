@@ -56,7 +56,7 @@ Contains title, explanatory text and checkboxes for tags.
     #tagselector ul li {
         display: list-item;
         list-style-type: none;
-        line-height: 2em;
+        padding: 0.35em 0;
     }
     .dropdown-host .icon { margin-left: 0.5em; }
     #Ableism ~ .dropdown-host .dropdown, #Classism ~ .dropdown-host .dropdown { right: -8em; }
