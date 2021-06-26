@@ -85,7 +85,7 @@ Contains title, explanatory text and checkboxes for tags.
     font: bold 0.8em sans-serif;
     border-radius: 50%;
     border: 0;
-    background: #7393B3;
+    background: #cccccc;
     color: var(#FFF);
 }
 
