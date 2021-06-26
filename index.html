@@ -19,45 +19,13 @@
         European Astronomical Society Annual Meeting as part of the special session on welfare and mental health in astronomy
         (SS8). They detail the lived experiences of those in astronomical research. The submissions have been screened by the
         session SOC to ensure they are not discriminatory and are anonymous. Below there are a number of tags that you can deselect
-        if you wish to filter-out specific topics. Letter submission will remain open throughout the EAS. You can <a href='https://docs.google.com/forms/d/1KPgc_1jcxHWZW3iyoJA2PXNufHVJtnwjzMtCQwu2FI0/edit'>submit a letter here</a>.
+        if you wish to filter-out any letter that has been labelled with that tag. Letter submission will remain open throughout the EAS. You can <a href='https://docs.google.com/forms/d/1KPgc_1jcxHWZW3iyoJA2PXNufHVJtnwjzMtCQwu2FI0/edit'>submit a letter here</a>.
         </p>
 
         <div id="tagselector">
             Select tags to show or <button onclick="showAllLetters(true)">Show All</button> / <button onclick="showAllLetters(false)">Hide All</button>:
             <ul>
-                <li>
-                    <input type="checkbox" name="Lack of support" id="lackofsupport" checked onclick="filterCards()">
-                    <label for="lackofsupport">Lack of support</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="Gatekeeping and exclusion" id="gatekeepingandexclusion" checked onclick="filterCards()">
-                    <label for="gatekeepingandexclusion">Gatekeeping and exclusion</label>
-                    <div class="dropdown-host">
-                        <span class="icon">?</span>
-                        <div class="dropdown">Gatekeeping is the activity of controlling, and usually limiting, general access to something.
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <input type="checkbox" name="Burnout and stress" id="burnoutandstress" checked onclick="filterCards()">
-                    <label for="burnoutandstress">Burnout and stress</label>
-                    <div class="dropdown-host">
-                        <span class="icon">?</span>
-                        <div class="dropdown">Burn-out is a syndrome conceptualized as resulting from chronic workplace stress. It is characterised by feelings of energy depletion or exhaustion, increased mental distance from one’s job, or feelings of negativism or cynicism related to one's job, and reduced professional efficacy.</div>
-                    </div>
-                </li>
-                <li>
-                    <input type="checkbox" name="Leaving or left academia" id="leavingorleftacademia" checked onclick="filterCards()">
-                    <label for="leavingorleftacademia">Leaving or left academia</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="Bullying, gaslighting, stalking, abuse" id="bullying,gaslighting,stalking,abuse" checked onclick="filterCards()">
-                    <label for="bullying,gaslighting,stalking,abuse">Bullying, gaslighting, stalking, abuse</label>
-                    <div class="dropdown-host">
-                        <span class="icon">?</span>
-                        <div class="dropdown">Bullying is the use of force, coercion, hurtful teasing or threat, to abuse, aggressively dominate or intimidate. Gaslighting is manipulating someone by psychological means into doubting their own sanity.</div>
-                    </div>
-                </li>
+
                 <li>
                     <input type="checkbox" name="Sexual Harassment, sexual violence" id="sexualharassment,sexualviolence" checked onclick="filterCards()">
                     <label for="sexualharassment,sexualviolence">Sexual Harassment, sexual violence</label>
@@ -69,6 +37,30 @@
                         <span class="icon">?</span>
                         <div class="dropdown"> Racism is prejudice, discrimination, or antagonism by an individual, community, or institution against a person or people on the basis of their membership of a particular racial or ethnic group, typically one that is a minority or marginalized.</div>
                     </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="Self harm, suicidal thoughts and suicide" id="selfharm,suicidalthoughtsandsuicide" checked onclick="filterCards()">
+                    <label for="selfharm,suicidalthoughtsandsuicide">Self harm, suicidal thoughts and suicide</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Alcohol, other intoxicants" id="alcohol,otherintoxicants" checked onclick="filterCards()">
+                    <label for="alcohol,otherintoxicants">Alcohol, other intoxicants</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Death or dying" id="deathordying" checked onclick="filterCards()">
+                    <label for="deathordying">Death or dying</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Bullying, gaslighting, stalking, abuse" id="bullying,gaslighting,stalking,abuse" checked onclick="filterCards()">
+                    <label for="bullying,gaslighting,stalking,abuse">Bullying, gaslighting, stalking, abuse</label>
+                    <div class="dropdown-host">
+                        <span class="icon">?</span>
+                        <div class="dropdown">Bullying is the use of force, coercion, hurtful teasing or threat, to abuse, aggressively dominate or intimidate. Gaslighting is manipulating someone by psychological means into doubting their own sanity.</div>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="Mental illness" id="mentalillness" checked onclick="filterCards()">
+                    <label for="mentalillness">Mental illness</label>
                 </li>
                 <li>
                     <input type="checkbox" name="Homophobia, biphobia, transphobia" id="homophobia,biphobia,transphobia" checked onclick="filterCards()">
@@ -110,22 +102,8 @@
                         <div class="dropdown">Toxic masculinity is a set of attitudes and ways of behaving stereotypically associated with or expected of men, regarded as having a negative impact on men and on society as a whole. Misandry is a dislike of, contempt for, or ingrained prejudice against men.</div>
                     </div>
                 </li>
-                <li>
-                    <input type="checkbox" name="Mental illness" id="mentalillness" checked onclick="filterCards()">
-                    <label for="mentalillness">Mental illness</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="Self harm, suicidal thoughts and suicide" id="selfharm,suicidalthoughtsandsuicide" checked onclick="filterCards()">
-                    <label for="selfharm,suicidalthoughtsandsuicide">Self harm, suicidal thoughts and suicide</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="Alcohol, other intoxicants" id="alcohol,otherintoxicants" checked onclick="filterCards()">
-                    <label for="alcohol,otherintoxicants">Alcohol, other intoxicants</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="Death or dying" id="deathordying" checked onclick="filterCards()">
-                    <label for="deathordying">Death or dying</label>
-                </li>
+
+
                 <li>
                     <input type="checkbox" name="Classism" id="classism" checked onclick="filterCards()">
                     <label for="classism">Classism</label>
@@ -142,7 +120,34 @@
                     <input type="checkbox" name="Food, eating disorders, body dysmorphia, body hatred, and fat phobia" id="food,eatingdisorders,bodydysmorphia,bodyhatred,andfatphobia" checked onclick="filterCards()">
                     <label for="food,eatingdisorders,bodydysmorphia,bodyhatred,andfatphobia">Food, eating disorders, body dysmorphia, body hatred, and fat phobia</label>
                 </li>
+                <li>
+                    <input type="checkbox" name="Lack of support" id="lackofsupport" checked onclick="filterCards()">
+                    <label for="lackofsupport">Lack of support</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Gatekeeping and exclusion" id="gatekeepingandexclusion" checked onclick="filterCards()">
+                    <label for="gatekeepingandexclusion">Gatekeeping and exclusion</label>
+                    <div class="dropdown-host">
+                        <span class="icon">?</span>
+                        <div class="dropdown">Gatekeeping is the activity of controlling, and usually limiting, general access to something.
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="Burnout and stress" id="burnoutandstress" checked onclick="filterCards()">
+                    <label for="burnoutandstress">Burnout and stress</label>
+                    <div class="dropdown-host">
+                        <span class="icon">?</span>
+                        <div class="dropdown">Burn-out is a syndrome conceptualized as resulting from chronic workplace stress. It is characterised by feelings of energy depletion or exhaustion, increased mental distance from one’s job, or feelings of negativism or cynicism related to one's job, and reduced professional efficacy.</div>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="Leaving or left academia" id="leavingorleftacademia" checked onclick="filterCards()">
+                    <label for="leavingorleftacademia">Leaving or left academia</label>
+                </li>
             </ul>
+
+
         </div>
     </header>
     <main>
