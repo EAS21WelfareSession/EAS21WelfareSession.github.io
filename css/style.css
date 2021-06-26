@@ -115,7 +115,7 @@ main {
 }
 /* Solid border */
 hr.solid {
-  border-top: 2px solid #7393B3;
+  border-top: 2px solid #C5C5C5;
 }
 .card-wrapper {
     break-inside: avoid; /* in multi-column contexts */
