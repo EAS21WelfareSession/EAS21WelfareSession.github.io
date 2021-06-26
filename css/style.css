@@ -41,7 +41,7 @@ Contains title, explanatory text and checkboxes for tags.
 */
 
 #tagselector {
-    color: white;
+    color: black;
     margin-top: 2em;
 }
 
