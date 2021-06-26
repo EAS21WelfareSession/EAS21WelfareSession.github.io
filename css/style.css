@@ -19,7 +19,7 @@ h2 { font-size: 1.5em; color: #FFFFFF; text-align: center;}
 h3 { font-size: 1.17em; text-align: center; color: #000000}
 h4 { font: 12pt "Avenir"; color:#FFFFFF}
 h5 { font: 12pt "Avenir"; color:#000000; text-align: center;}
-h6 { font: 11pt "Avenir"; color:#b30900}
+h6 { font: 16pt "Avenir"; color:#000000; text-align: center;}
 h1, h2, h3, h4, h6 { font-weight: bold;}
 h1, h2, h3, h4, p, ol, ul, caption {
     margin-block-start: 0.25em;
@@ -113,7 +113,10 @@ main {
     column-count: 3;
     padding: 1em 0;
 }
-
+/* Solid border */
+hr.solid {
+  border-top: 2px solid #7393B3;
+}
 .card-wrapper {
     break-inside: avoid; /* in multi-column contexts */
     box-sizing: border-box;
