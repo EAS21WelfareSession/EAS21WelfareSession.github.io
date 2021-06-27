@@ -71,7 +71,7 @@ Contains title, explanatory text and checkboxes for tags.
         padding: 0.35em 0;
     }
     .dropdown-host .icon { margin-left: 0.5em; }
-    #Ableism ~ .dropdown-host .dropdown, #Classism ~ .dropdown-host .dropdown { right: -8em; }
+    #ableism ~ .dropdown-host .dropdown, #classism ~ .dropdown-host .dropdown { right: -8em; }
 }
 
 .dropdown-host {
@@ -84,8 +84,7 @@ Contains title, explanatory text and checkboxes for tags.
     font: bold 0.8em sans-serif;
     border-radius: 50%;
     border: 0;
-    background: #cccccc;
-    color: var(#FFF);
+    background: var(--lightgrey);
 }
 
 .dropdown-host .dropdown {
